@@ -16,8 +16,7 @@ import pyarrow.parquet as pq
 
 PROJECT_ID = os.environ.get("GCP_PROJECT_ID")
 BUCKET = os.environ.get("GCP_GCS_BUCKET")
-# PROJECT_ID = "fellowship-7"
-# BUCKET = "fellowship-7"
+
 
 dataset_file = "acs-usa.csv"
 dataset_url = "https://datausa.io/api/data?drilldowns=Nation&measures=Population"
@@ -40,30 +39,19 @@ local_file_name = ['customer.csv', 'education.csv', 'job.csv', 'salesperson.csv'
 
 def download_github_data (URL_LIST, LOCAL_FILE_NAME):
     for url, filename in zip(URL_LIST, LOCAL_FILE_NAME):
-        os.system(f"wget {url} -O {filename}")
+        os.system(f"wget {url} -O {path_to_local_home}/{filename}")
 
-
-
-# NOTE: takes 20 mins, at an upload speed of 800kbps. Faster if your internet has a better upload speed
-def upload_to_gcs(bucket, object_name, local_file):
-    """
-    Ref: https://cloud.google.com/storage/docs/uploading-objects#storage-upload-object-python
-    :param bucket: GCS bucket name
-    :param object_name: target path & file-name
-    :param local_file: source path & file-name
-    :return:
-    """
-    # WORKAROUND to prevent timeout for files > 6 MB on 800 kbps upload speed.
-    # (Ref: https://github.com/googleapis/python-storage/issues/74)
+def load_data_to_gcs(bucket, object_name, local_file_name):
     storage.blob._MAX_MULTIPART_SIZE = 5 * 1024 * 1024  # 5 MB
     storage.blob._DEFAULT_CHUNKSIZE = 5 * 1024 * 1024  # 5 MB
-    # End of Workaround
 
     client = storage.Client()
     bucket = client.bucket(bucket)
 
-    blob = bucket.blob(object_name)
-    blob.upload_from_filename(local_file)
+    for filename, object in zip(local_file_name, object_name) :
+        blob = bucket.blob(object)
+        blob.upload_from_filename(filename)
+
 
 
 default_args = {
@@ -86,19 +74,20 @@ with DAG(
     download_github_data_task = PythonOperator(
         task_id="download_github_data_task",
         python_callable=download_github_data,
-        op_kwargs={'URL_LIST': url_list, 'LOCAL_FILE_NAME': local_file_name},
-    )
-
-
-    local_to_gcs_task = PythonOperator(
-        task_id="local_to_gcs_task",
-        python_callable=upload_to_gcs,
         op_kwargs={
-            "bucket": BUCKET,
-            "object_name": f"raw/{parquet_file}",
-            "local_file": f"{path_to_local_home}/{parquet_file}",
-        },
+            'URL_LIST': url_list,
+            'LOCAL_FILE_NAME': local_file_name},
     )
+
+    load_to_gcs = PythonOperator(
+            task_id="load_to_gcs_task",
+            python_callable=load_data_to_gcs,
+            op_kwargs={
+                "bucket": BUCKET,
+                "object_name": f"data/{local_file_name}",
+                "local_file_name": f"{path_to_local_home}/{local_file_name}",
+            },
+    ),
 
     bigquery_external_table_task = BigQueryCreateExternalTableOperator(
         task_id="bigquery_external_table_task",
