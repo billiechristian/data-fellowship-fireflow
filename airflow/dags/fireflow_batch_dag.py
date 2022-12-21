@@ -26,24 +26,22 @@ path_to_local_home = os.environ.get("AIRFLOW_HOME", "/opt/airflow/")
 parquet_file = dataset_file.replace('.csv', '.parquet')
 BIGQUERY_DATASET = os.environ.get("BIGQUERY_DATASET", 'homework_modul2')
 
-def download_data_to_json(url):
-    response = requests.get(url).json()
-    with open('acs-usa.json', 'w') as f:
-        json.dump(response, f)
+# GITHUB DATA URL
+customer = 'https://raw.githubusercontent.com/billiechristian/data-fellowship-fireflow/main/data/customer.csv'
+education = 'https://raw.githubusercontent.com/billiechristian/data-fellowship-fireflow/main/data/education.csv'
+job = 'https://raw.githubusercontent.com/billiechristian/data-fellowship-fireflow/main/data/job.csv'
+salesperson = 'https://raw.githubusercontent.com/billiechristian/data-fellowship-fireflow/main/data/salesperson.csv'
+sales_training = 'https://raw.githubusercontent.com/billiechristian/data-fellowship-fireflow/main/data/salesperson_training.csv'
+training_course = 'https://raw.githubusercontent.com/billiechristian/data-fellowship-fireflow/main/data/training_course.csv'
+fact = f'https://raw.githubusercontent.com/billiechristian/data-fellowship-fireflow/main/data/data_split/fact_table_{date}.csv'
 
-def format_to_csv(src_csv):
-    json_ = open(src_csv)
-    json_data = json.load(json_)
+url_list = [customer, education, job, salesperson, sales_training, training_course, fact]
+local_file_name = ['customer.csv', 'education.csv', 'job.csv', 'salesperson.csv', 'sales_training.csv', 'training_course.csv', f'fact_table_{date}.csv']
 
-    df = pd.DataFrame(json_data['data'])
-    df.to_csv(f"{path_to_local_home}/{dataset_file}", index=False)
+def download_github_data (URL_LIST, LOCAL_FILE_NAME):
+    for url, filename in zip(URL_LIST, LOCAL_FILE_NAME):
+        os.system(f"wget {url} -O {filename}")
 
-def format_to_parquet(src_file):
-    if not src_file.endswith('.csv'):
-        logging.error("Can only accept source files in CSV format, for the moment")
-        return
-    table = pv.read_csv(src_file)
-    pq.write_table(table, src_file.replace('.csv', '.parquet'))
 
 
 # NOTE: takes 20 mins, at an upload speed of 800kbps. Faster if your internet has a better upload speed
@@ -77,33 +75,20 @@ default_args = {
 
 # NOTE: DAG declaration - using a Context Manager (an implicit way)
 with DAG(
-    dag_id="homework_dag",
-    schedule_interval="@daily",
+    dag_id="fireflow_dag",
+    schedule_interval="0 10 * * *",
     default_args=default_args,
     catchup=False,
     max_active_runs=1,
     tags=['data-fellowship-8'],
 ) as dag:
 
-    download_dataset_task = PythonOperator(
-        task_id="download_dataset_task",
-        python_callable=download_data_to_json,
-        op_kwargs={'url': dataset_url},
+    download_github_data_task = PythonOperator(
+        task_id="download_github_data_task",
+        python_callable=download_github_data,
+        op_kwargs={'URL_LIST': url_list, 'LOCAL_FILE_NAME': local_file_name},
     )
 
-    format_to_csv_task = PythonOperator(
-        task_id="format_to_csv_task",
-        python_callable=format_to_csv,
-        op_kwargs={'src_csv': 'acs-usa.json'},
-    )
-
-    format_to_parquet_task = PythonOperator(
-        task_id="format_to_parquet_task",
-        python_callable=format_to_parquet,
-        op_kwargs={
-            "src_file": f"{path_to_local_home}/{dataset_file}",
-        },
-    )
 
     local_to_gcs_task = PythonOperator(
         task_id="local_to_gcs_task",
@@ -130,13 +115,13 @@ with DAG(
         },
     )
 
-    download_dataset_task >> format_to_csv_task >> \
+    download_github_data_task >> format_to_csv_task >> \
         format_to_parquet_task >> local_to_gcs_task >> bigquery_external_table_task
 
 
 # Overall DAG flow
-download_dataset_from_github (daily) 
->> save_to_GCS 
->> load_to_bigquery
->> run_dbt
+# download_dataset_from_github (daily) 
+# >> save_to_GCS 
+# >> load_to_bigquery
+# >> run_dbt
 
