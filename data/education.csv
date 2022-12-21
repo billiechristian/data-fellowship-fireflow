@@ -1,9 +1,9 @@
-education_id,description
-1,basic.4y
-2,high.school
-3,basic.6y
-4,basic.9y
-5,professional.course
-6,unknown
-7,university.degree
-8,illiterate
+education_id,education_level,description
+1,basic.4y,4th grade elementary school education
+2,high.school,high school level education
+3,basic.6y,6th grade elementary school education
+4,basic.9y,junior high school level education
+5,professional.course,professional education after graduating from undergraduate education
+6,unknown,missing value
+7,university.degree,have completed a minimum education equivalent to a bachelor's degree
+8,illiterate,have no educational background

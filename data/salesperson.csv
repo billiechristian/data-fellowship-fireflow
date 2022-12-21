@@ -1,31 +1,31 @@
-id,name,age,city,sex,conversion
-1,Bobby Brown,21,Houston,1,11.75
-2,Jeffery Carter,34,New York,2,10.72
-3,Cynthia Frederick,22,Phoenix,1,10.01
-4,Samantha Lee,35,Phoenix,2,11.5
-5,Deanna Jones,36,Phoenix,2,11.02
-6,Jason Walters,23,Chicago,1,9.91
-7,Jake Hernandez,39,Chicago,2,12.75
-8,Christina Hodge,20,New York,1,11.02
-9,Diane Mcmahon,35,New York,1,12.24
-10,Anthony Jensen,30,Phoenix,1,12.11
-11,Amanda Holder,20,Houston,1,10.9
-12,Franklin Holmes MD,23,Chicago,1,11.11
-13,Christian Lopez,27,Phoenix,1,10.56
-14,Michael Medina,37,Houston,1,11.85
-15,Jennifer Henry,20,Houston,2,11.33
-16,David Berry,26,Phoenix,2,12.21
-17,Matthew Wright,29,Los Angeles,2,11.79
-18,Julie Mckenzie,33,New York,1,11.49
-19,Samuel Blankenship,26,Phoenix,2,10.78
-20,Jennifer Heath,39,New York,1,11.13
-21,Michele Garcia,30,New York,2,11.33
-22,Kathryn Johnson,38,Los Angeles,1,9.85
-23,Jill Richard,36,Houston,1,11.28
-24,Kristine Anderson,30,Houston,1,11.18
-25,Allen Jackson,39,Houston,2,11.21
-26,Crystal Rich,28,New York,1,11.82
-27,Marcus Williams,24,New York,2,11.94
-28,David Conner,31,Houston,2,11.81
-29,Robert Smith,37,Phoenix,1,11.51
-30,Eric Schaefer,24,Houston,2,9.96
+id,name,age,city,sex
+1,Bobby Brown,21,Houston,1
+2,Jeffery Carter,34,New York,2
+3,Cynthia Frederick,22,Phoenix,1
+4,Samantha Lee,35,Phoenix,2
+5,Deanna Jones,36,Phoenix,2
+6,Jason Walters,23,Chicago,1
+7,Jake Hernandez,39,Chicago,2
+8,Christina Hodge,20,New York,1
+9,Diane Mcmahon,35,New York,1
+10,Anthony Jensen,30,Phoenix,1
+11,Amanda Holder,20,Houston,1
+12,Franklin Holmes MD,23,Chicago,1
+13,Christian Lopez,27,Phoenix,1
+14,Michael Medina,37,Houston,1
+15,Jennifer Henry,20,Houston,2
+16,David Berry,26,Phoenix,2
+17,Matthew Wright,29,Los Angeles,2
+18,Julie Mckenzie,33,New York,1
+19,Samuel Blankenship,26,Phoenix,2
+20,Jennifer Heath,39,New York,1
+21,Michele Garcia,30,New York,2
+22,Kathryn Johnson,38,Los Angeles,1
+23,Jill Richard,36,Houston,1
+24,Kristine Anderson,30,Houston,1
+25,Allen Jackson,39,Houston,2
+26,Crystal Rich,28,New York,1
+27,Marcus Williams,24,New York,2
+28,David Conner,31,Houston,2
+29,Robert Smith,37,Phoenix,1
+30,Eric Schaefer,24,Houston,2
