@@ -1,0 +1,636 @@
+[2022-12-19 08:07:08,123] {processor.py:163} INFO - Started process (PID=37) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:07:08,124] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:07:08,127] {logging_mixin.py:109} INFO - [2022-12-19 08:07:08,127] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:07:12,871] {processor.py:654} INFO - DAG(s) dict_keys(['homework_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:07:14,177] {logging_mixin.py:109} INFO - [2022-12-19 08:07:14,173] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-19 08:07:14,248] {logging_mixin.py:109} INFO - [2022-12-19 08:07:14,248] {dag.py:2935} INFO - Setting next_dagrun for homework_dag to 2022-12-18 00:00:00+00:00
+[2022-12-19 08:07:14,303] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 6.187 seconds
+[2022-12-19 08:07:44,986] {processor.py:163} INFO - Started process (PID=73) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:07:44,992] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:07:44,997] {logging_mixin.py:109} INFO - [2022-12-19 08:07:44,996] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:07:46,541] {processor.py:654} INFO - DAG(s) dict_keys(['homework_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:07:46,553] {logging_mixin.py:109} INFO - [2022-12-19 08:07:46,553] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-19 08:07:46,570] {logging_mixin.py:109} INFO - [2022-12-19 08:07:46,570] {dag.py:2935} INFO - Setting next_dagrun for homework_dag to 2022-12-18 00:00:00+00:00
+[2022-12-19 08:07:46,588] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 1.618 seconds
+[2022-12-19 08:08:16,743] {processor.py:163} INFO - Started process (PID=100) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:08:16,744] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:08:16,745] {logging_mixin.py:109} INFO - [2022-12-19 08:08:16,745] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:08:17,351] {processor.py:654} INFO - DAG(s) dict_keys(['homework_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:08:17,362] {logging_mixin.py:109} INFO - [2022-12-19 08:08:17,361] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-19 08:08:17,376] {logging_mixin.py:109} INFO - [2022-12-19 08:08:17,376] {dag.py:2935} INFO - Setting next_dagrun for homework_dag to 2022-12-18 00:00:00+00:00
+[2022-12-19 08:08:17,385] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 0.645 seconds
+[2022-12-19 08:08:47,499] {processor.py:163} INFO - Started process (PID=137) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:08:47,501] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:08:47,502] {logging_mixin.py:109} INFO - [2022-12-19 08:08:47,501] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:08:48,256] {processor.py:654} INFO - DAG(s) dict_keys(['homework_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:08:48,264] {logging_mixin.py:109} INFO - [2022-12-19 08:08:48,264] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-19 08:08:48,278] {logging_mixin.py:109} INFO - [2022-12-19 08:08:48,278] {dag.py:2935} INFO - Setting next_dagrun for homework_dag to 2022-12-18 00:00:00+00:00
+[2022-12-19 08:08:48,289] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 0.792 seconds
+[2022-12-19 08:09:18,408] {processor.py:163} INFO - Started process (PID=164) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:09:18,410] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:09:18,411] {logging_mixin.py:109} INFO - [2022-12-19 08:09:18,410] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:09:19,086] {processor.py:654} INFO - DAG(s) dict_keys(['homework_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:09:19,099] {logging_mixin.py:109} INFO - [2022-12-19 08:09:19,099] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-19 08:09:19,117] {logging_mixin.py:109} INFO - [2022-12-19 08:09:19,117] {dag.py:2935} INFO - Setting next_dagrun for homework_dag to 2022-12-18 00:00:00+00:00
+[2022-12-19 08:09:19,127] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 0.722 seconds
+[2022-12-19 08:09:49,255] {processor.py:163} INFO - Started process (PID=201) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:09:49,257] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:09:49,257] {logging_mixin.py:109} INFO - [2022-12-19 08:09:49,257] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:09:49,893] {processor.py:654} INFO - DAG(s) dict_keys(['homework_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:09:49,902] {logging_mixin.py:109} INFO - [2022-12-19 08:09:49,901] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-19 08:09:49,915] {logging_mixin.py:109} INFO - [2022-12-19 08:09:49,915] {dag.py:2935} INFO - Setting next_dagrun for homework_dag to 2022-12-18 00:00:00+00:00
+[2022-12-19 08:09:49,923] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 0.670 seconds
+[2022-12-19 08:10:20,051] {processor.py:163} INFO - Started process (PID=238) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:10:20,053] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:10:20,054] {logging_mixin.py:109} INFO - [2022-12-19 08:10:20,054] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:10:20,704] {processor.py:654} INFO - DAG(s) dict_keys(['homework_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:10:20,716] {logging_mixin.py:109} INFO - [2022-12-19 08:10:20,716] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-19 08:10:20,732] {logging_mixin.py:109} INFO - [2022-12-19 08:10:20,732] {dag.py:2935} INFO - Setting next_dagrun for homework_dag to 2022-12-18 00:00:00+00:00
+[2022-12-19 08:10:20,744] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 0.695 seconds
+[2022-12-19 08:10:50,831] {processor.py:163} INFO - Started process (PID=265) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:10:50,833] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:10:50,833] {logging_mixin.py:109} INFO - [2022-12-19 08:10:50,833] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:10:51,404] {processor.py:654} INFO - DAG(s) dict_keys(['homework_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:10:51,414] {logging_mixin.py:109} INFO - [2022-12-19 08:10:51,414] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-19 08:10:51,427] {logging_mixin.py:109} INFO - [2022-12-19 08:10:51,427] {dag.py:2935} INFO - Setting next_dagrun for homework_dag to 2022-12-18 00:00:00+00:00
+[2022-12-19 08:10:51,438] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 0.610 seconds
+[2022-12-19 08:11:21,590] {processor.py:163} INFO - Started process (PID=301) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:11:21,592] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:11:21,592] {logging_mixin.py:109} INFO - [2022-12-19 08:11:21,592] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:11:22,137] {processor.py:654} INFO - DAG(s) dict_keys(['homework_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:11:22,144] {logging_mixin.py:109} INFO - [2022-12-19 08:11:22,144] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-19 08:11:22,155] {logging_mixin.py:109} INFO - [2022-12-19 08:11:22,155] {dag.py:2935} INFO - Setting next_dagrun for homework_dag to 2022-12-18 00:00:00+00:00
+[2022-12-19 08:11:22,165] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 0.577 seconds
+[2022-12-19 08:11:52,287] {processor.py:163} INFO - Started process (PID=337) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:11:52,288] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:11:52,289] {logging_mixin.py:109} INFO - [2022-12-19 08:11:52,289] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:11:53,335] {processor.py:654} INFO - DAG(s) dict_keys(['homework_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:11:53,346] {logging_mixin.py:109} INFO - [2022-12-19 08:11:53,346] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-19 08:11:53,366] {logging_mixin.py:109} INFO - [2022-12-19 08:11:53,365] {dag.py:2935} INFO - Setting next_dagrun for homework_dag to 2022-12-18 00:00:00+00:00
+[2022-12-19 08:11:53,377] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 1.093 seconds
+[2022-12-19 08:12:23,448] {processor.py:163} INFO - Started process (PID=365) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:12:23,450] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:12:23,451] {logging_mixin.py:109} INFO - [2022-12-19 08:12:23,450] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:12:24,240] {processor.py:654} INFO - DAG(s) dict_keys(['homework_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:12:24,250] {logging_mixin.py:109} INFO - [2022-12-19 08:12:24,249] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-19 08:12:24,263] {logging_mixin.py:109} INFO - [2022-12-19 08:12:24,263] {dag.py:2935} INFO - Setting next_dagrun for homework_dag to 2022-12-18 00:00:00+00:00
+[2022-12-19 08:12:24,273] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 0.827 seconds
+[2022-12-19 08:12:54,399] {processor.py:163} INFO - Started process (PID=402) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:12:54,401] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:12:54,405] {logging_mixin.py:109} INFO - [2022-12-19 08:12:54,403] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:12:55,266] {processor.py:654} INFO - DAG(s) dict_keys(['homework_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:12:55,278] {logging_mixin.py:109} INFO - [2022-12-19 08:12:55,277] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-19 08:12:55,294] {logging_mixin.py:109} INFO - [2022-12-19 08:12:55,293] {dag.py:2935} INFO - Setting next_dagrun for homework_dag to 2022-12-18 00:00:00+00:00
+[2022-12-19 08:12:55,303] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 0.908 seconds
+[2022-12-19 08:13:25,449] {processor.py:163} INFO - Started process (PID=431) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:13:25,451] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:13:25,453] {logging_mixin.py:109} INFO - [2022-12-19 08:13:25,452] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:13:26,261] {processor.py:654} INFO - DAG(s) dict_keys(['homework_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:13:26,269] {logging_mixin.py:109} INFO - [2022-12-19 08:13:26,268] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-19 08:13:26,283] {logging_mixin.py:109} INFO - [2022-12-19 08:13:26,282] {dag.py:2935} INFO - Setting next_dagrun for homework_dag to 2022-12-18 00:00:00+00:00
+[2022-12-19 08:13:26,292] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 0.847 seconds
+[2022-12-19 08:13:56,425] {processor.py:163} INFO - Started process (PID=465) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:13:56,427] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:13:56,428] {logging_mixin.py:109} INFO - [2022-12-19 08:13:56,428] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:13:57,293] {processor.py:654} INFO - DAG(s) dict_keys(['homework_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:13:57,303] {logging_mixin.py:109} INFO - [2022-12-19 08:13:57,303] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-19 08:13:57,322] {logging_mixin.py:109} INFO - [2022-12-19 08:13:57,322] {dag.py:2935} INFO - Setting next_dagrun for homework_dag to 2022-12-18 00:00:00+00:00
+[2022-12-19 08:13:57,333] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 0.911 seconds
+[2022-12-19 08:14:27,471] {processor.py:163} INFO - Started process (PID=494) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:14:27,473] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:14:27,474] {logging_mixin.py:109} INFO - [2022-12-19 08:14:27,474] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:14:28,156] {processor.py:654} INFO - DAG(s) dict_keys(['homework_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:14:28,165] {logging_mixin.py:109} INFO - [2022-12-19 08:14:28,165] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-19 08:14:28,180] {logging_mixin.py:109} INFO - [2022-12-19 08:14:28,180] {dag.py:2935} INFO - Setting next_dagrun for homework_dag to 2022-12-18 00:00:00+00:00
+[2022-12-19 08:14:28,190] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 0.723 seconds
+[2022-12-19 08:14:58,290] {processor.py:163} INFO - Started process (PID=530) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:14:58,292] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:14:58,292] {logging_mixin.py:109} INFO - [2022-12-19 08:14:58,292] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:14:59,007] {processor.py:654} INFO - DAG(s) dict_keys(['homework_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:14:59,017] {logging_mixin.py:109} INFO - [2022-12-19 08:14:59,016] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-19 08:14:59,033] {logging_mixin.py:109} INFO - [2022-12-19 08:14:59,033] {dag.py:2935} INFO - Setting next_dagrun for homework_dag to 2022-12-18 00:00:00+00:00
+[2022-12-19 08:14:59,046] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 0.760 seconds
+[2022-12-19 08:15:30,047] {processor.py:163} INFO - Started process (PID=557) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:15:30,049] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:15:30,050] {logging_mixin.py:109} INFO - [2022-12-19 08:15:30,050] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:15:30,753] {processor.py:654} INFO - DAG(s) dict_keys(['homework_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:15:30,763] {logging_mixin.py:109} INFO - [2022-12-19 08:15:30,763] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-19 08:15:30,778] {logging_mixin.py:109} INFO - [2022-12-19 08:15:30,778] {dag.py:2935} INFO - Setting next_dagrun for homework_dag to 2022-12-18 00:00:00+00:00
+[2022-12-19 08:15:31,681] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 1.637 seconds
+[2022-12-19 08:16:04,495] {processor.py:163} INFO - Started process (PID=594) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:16:04,499] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:16:04,501] {logging_mixin.py:109} INFO - [2022-12-19 08:16:04,501] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:16:34,852] {logging_mixin.py:109} INFO - [2022-12-19 08:16:34,770] {timeout.py:36} ERROR - Process timed out, PID: 594
+[2022-12-19 08:16:47,386] {logging_mixin.py:109} INFO - [2022-12-19 08:16:35,038] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/homework_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/homework_dag.py", line 5, in <module>
+    import pandas as pd
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/__init__.py", line 22, in <module>
+    from pandas.compat import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/compat/__init__.py", line 23, in <module>
+    from pandas.compat.pyarrow import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/compat/pyarrow.py", line 6, in <module>
+    import pyarrow as pa
+  File "/home/airflow/.local/lib/python3.7/site-packages/pyarrow/__init__.py", line 226, in <module>
+    _localfs = _LocalFileSystem._get_instance()
+  File "/home/airflow/.local/lib/python3.7/site-packages/pyarrow/filesystem.py", line 253, in _get_instance
+    with warnings.catch_warnings():
+  File "/usr/local/lib/python3.7/warnings.py", line 449, in __init__
+    def __init__(self, *, record=False, module=None):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 37, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/homework_dag.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.2.3/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.2.3/best-practices.html#reducing-dag-complexity, PID: 594
+[2022-12-19 08:17:38,088] {processor.py:163} INFO - Started process (PID=623) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:17:38,156] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:17:38,282] {logging_mixin.py:109} INFO - [2022-12-19 08:17:38,281] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:17:42,181] {processor.py:654} INFO - DAG(s) dict_keys(['homework_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:17:42,197] {logging_mixin.py:109} INFO - [2022-12-19 08:17:42,197] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-19 08:17:42,220] {logging_mixin.py:109} INFO - [2022-12-19 08:17:42,220] {dag.py:2935} INFO - Setting next_dagrun for homework_dag to 2022-12-18 00:00:00+00:00
+[2022-12-19 08:17:42,317] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 4.239 seconds
+[2022-12-19 08:18:28,249] {processor.py:163} INFO - Started process (PID=650) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:18:32,068] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:18:34,045] {logging_mixin.py:109} INFO - [2022-12-19 08:18:33,933] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:19:33,682] {processor.py:163} INFO - Started process (PID=676) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:19:33,691] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:19:33,699] {logging_mixin.py:109} INFO - [2022-12-19 08:19:33,699] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:20:03,975] {logging_mixin.py:109} INFO - [2022-12-19 08:20:03,974] {timeout.py:36} ERROR - Process timed out, PID: 676
+[2022-12-19 08:20:13,468] {logging_mixin.py:109} INFO - [2022-12-19 08:20:03,976] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/homework_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/homework_dag.py", line 5, in <module>
+    import pandas as pd
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/__init__.py", line 50, in <module>
+    from pandas.core.api import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/api.py", line 48, in <module>
+    from pandas.core.groupby import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/groupby/__init__.py", line 1, in <module>
+    from pandas.core.groupby.generic import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/groupby/generic.py", line 73, in <module>
+    from pandas.core.frame import DataFrame
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/frame.py", line 193, in <module>
+    from pandas.core.series import Series
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/series.py", line 138, in <module>
+    from pandas.core.tools.datetimes import to_datetime
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/tools/datetimes.py", line 61, in <module>
+    from pandas.arrays import (
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 816, in get_code
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 37, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/homework_dag.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.2.3/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.2.3/best-practices.html#reducing-dag-complexity, PID: 676
+[2022-12-19 08:20:15,881] {processor.py:690} INFO - Deactivated 1 DAGs which are no longer present in /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:20:15,883] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:20:17,094] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 43.485 seconds
+[2022-12-19 08:20:59,631] {processor.py:163} INFO - Started process (PID=704) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:20:59,658] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:20:59,661] {logging_mixin.py:109} INFO - [2022-12-19 08:20:59,661] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:21:07,968] {processor.py:654} INFO - DAG(s) dict_keys(['homework_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:21:08,124] {logging_mixin.py:109} INFO - [2022-12-19 08:21:08,124] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-19 08:21:08,350] {logging_mixin.py:109} INFO - [2022-12-19 08:21:08,350] {dag.py:2935} INFO - Setting next_dagrun for homework_dag to 2022-12-18 00:00:00+00:00
+[2022-12-19 08:21:08,427] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 8.768 seconds
+[2022-12-19 08:21:38,762] {processor.py:163} INFO - Started process (PID=746) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:21:38,774] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:21:38,775] {logging_mixin.py:109} INFO - [2022-12-19 08:21:38,775] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:21:39,692] {processor.py:654} INFO - DAG(s) dict_keys(['homework_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:21:39,701] {logging_mixin.py:109} INFO - [2022-12-19 08:21:39,701] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-19 08:21:39,715] {logging_mixin.py:109} INFO - [2022-12-19 08:21:39,715] {dag.py:2935} INFO - Setting next_dagrun for homework_dag to 2022-12-18 00:00:00+00:00
+[2022-12-19 08:21:39,760] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 1.001 seconds
+[2022-12-19 08:22:10,131] {processor.py:163} INFO - Started process (PID=773) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:22:10,170] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:22:10,172] {logging_mixin.py:109} INFO - [2022-12-19 08:22:10,171] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:22:10,935] {processor.py:654} INFO - DAG(s) dict_keys(['homework_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:22:10,948] {logging_mixin.py:109} INFO - [2022-12-19 08:22:10,948] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-19 08:22:10,961] {logging_mixin.py:109} INFO - [2022-12-19 08:22:10,961] {dag.py:2935} INFO - Setting next_dagrun for homework_dag to 2022-12-18 00:00:00+00:00
+[2022-12-19 08:22:11,565] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 1.437 seconds
+[2022-12-19 08:22:41,958] {processor.py:163} INFO - Started process (PID=810) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:22:42,015] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:22:42,016] {logging_mixin.py:109} INFO - [2022-12-19 08:22:42,016] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:22:43,106] {processor.py:654} INFO - DAG(s) dict_keys(['homework_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:22:43,115] {logging_mixin.py:109} INFO - [2022-12-19 08:22:43,114] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-19 08:22:43,128] {logging_mixin.py:109} INFO - [2022-12-19 08:22:43,128] {dag.py:2935} INFO - Setting next_dagrun for homework_dag to 2022-12-18 00:00:00+00:00
+[2022-12-19 08:22:43,155] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 1.200 seconds
+[2022-12-19 08:23:13,261] {processor.py:163} INFO - Started process (PID=838) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:23:13,361] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:23:13,362] {logging_mixin.py:109} INFO - [2022-12-19 08:23:13,362] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:23:14,578] {processor.py:654} INFO - DAG(s) dict_keys(['homework_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:23:14,585] {logging_mixin.py:109} INFO - [2022-12-19 08:23:14,585] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-19 08:23:14,601] {logging_mixin.py:109} INFO - [2022-12-19 08:23:14,601] {dag.py:2935} INFO - Setting next_dagrun for homework_dag to 2022-12-18 00:00:00+00:00
+[2022-12-19 08:23:15,576] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 2.318 seconds
+[2022-12-19 08:23:46,136] {processor.py:163} INFO - Started process (PID=865) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:23:46,137] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:23:46,147] {logging_mixin.py:109} INFO - [2022-12-19 08:23:46,147] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:24:05,568] {processor.py:654} INFO - DAG(s) dict_keys(['homework_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:24:05,578] {logging_mixin.py:109} INFO - [2022-12-19 08:24:05,577] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-19 08:24:05,596] {logging_mixin.py:109} INFO - [2022-12-19 08:24:05,596] {dag.py:2935} INFO - Setting next_dagrun for homework_dag to 2022-12-18 00:00:00+00:00
+[2022-12-19 08:24:05,612] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 19.652 seconds
+[2022-12-19 08:24:36,230] {processor.py:163} INFO - Started process (PID=901) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:24:36,231] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:24:36,232] {logging_mixin.py:109} INFO - [2022-12-19 08:24:36,232] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:24:36,926] {processor.py:654} INFO - DAG(s) dict_keys(['homework_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:24:36,934] {logging_mixin.py:109} INFO - [2022-12-19 08:24:36,934] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-19 08:24:36,950] {logging_mixin.py:109} INFO - [2022-12-19 08:24:36,950] {dag.py:2935} INFO - Setting next_dagrun for homework_dag to 2022-12-18 00:00:00+00:00
+[2022-12-19 08:24:36,965] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 0.739 seconds
+[2022-12-19 08:25:07,453] {processor.py:163} INFO - Started process (PID=927) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:25:07,460] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:25:07,462] {logging_mixin.py:109} INFO - [2022-12-19 08:25:07,462] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:25:52,354] {logging_mixin.py:109} INFO - [2022-12-19 08:25:52,274] {timeout.py:36} ERROR - Process timed out, PID: 927
+[2022-12-19 08:25:52,370] {logging_mixin.py:109} WARNING - Exception ignored in: <function WeakKeyDictionary.__init__.<locals>.remove at 0x7fce4292db00>
+[2022-12-19 08:25:52,380] {logging_mixin.py:109} WARNING - Traceback (most recent call last):
+[2022-12-19 08:25:52,381] {logging_mixin.py:109} WARNING -   File "/usr/local/lib/python3.7/weakref.py", line 358, in remove
+[2022-12-19 08:25:52,631] {logging_mixin.py:109} WARNING -     def remove(k, selfref=ref(self)):
+[2022-12-19 08:25:52,642] {logging_mixin.py:109} WARNING -   File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 37, in handle_timeout
+[2022-12-19 08:25:52,699] {logging_mixin.py:109} WARNING -     raise AirflowTaskTimeout(self.error_message)
+[2022-12-19 08:25:52,705] {logging_mixin.py:109} WARNING - airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/homework_dag.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.2.3/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.2.3/best-practices.html#reducing-dag-complexity, PID: 927
+[2022-12-19 08:26:19,451] {processor.py:163} INFO - Started process (PID=955) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:26:19,971] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:26:20,680] {logging_mixin.py:109} INFO - [2022-12-19 08:26:20,680] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:27:10,010] {processor.py:163} INFO - Started process (PID=965) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:27:10,011] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:27:10,012] {logging_mixin.py:109} INFO - [2022-12-19 08:27:10,012] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:28:06,769] {processor.py:163} INFO - Started process (PID=992) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:28:06,770] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:28:06,770] {logging_mixin.py:109} INFO - [2022-12-19 08:28:06,770] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:29:24,014] {processor.py:163} INFO - Started process (PID=1011) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:29:24,015] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:29:24,018] {logging_mixin.py:109} INFO - [2022-12-19 08:29:24,017] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:30:39,622] {processor.py:163} INFO - Started process (PID=1039) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:30:39,625] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:30:39,632] {logging_mixin.py:109} INFO - [2022-12-19 08:30:39,632] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:31:40,179] {processor.py:163} INFO - Started process (PID=1068) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:31:40,181] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:31:40,182] {logging_mixin.py:109} INFO - [2022-12-19 08:31:40,182] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:32:47,436] {processor.py:163} INFO - Started process (PID=1096) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:32:47,439] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:32:47,442] {logging_mixin.py:109} INFO - [2022-12-19 08:32:47,442] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:33:17,468] {logging_mixin.py:109} INFO - [2022-12-19 08:33:17,468] {timeout.py:36} ERROR - Process timed out, PID: 1096
+[2022-12-19 08:33:17,574] {logging_mixin.py:109} INFO - [2022-12-19 08:33:17,469] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/homework_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/homework_dag.py", line 5, in <module>
+    import pandas as pd
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/__init__.py", line 143, in <module>
+    from pandas.io.api import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/api.py", line 8, in <module>
+    from pandas.io.excel import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/excel/__init__.py", line 1, in <module>
+    from pandas.io.excel._base import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/excel/_base.py", line 61, in <module>
+    from pandas.io.parsers import TextParser
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/__init__.py", line 1, in <module>
+    from pandas.io.parsers.readers import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parsers/readers.py", line 499, in <module>
+    storage_options=generic._shared_docs["storage_options"],
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 37, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/homework_dag.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.2.3/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.2.3/best-practices.html#reducing-dag-complexity, PID: 1096
+[2022-12-19 08:33:17,693] {processor.py:690} INFO - Deactivated 1 DAGs which are no longer present in /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:33:17,694] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:33:17,832] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 30.399 seconds
+[2022-12-19 08:33:52,635] {processor.py:163} INFO - Started process (PID=1121) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:33:53,518] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:33:54,166] {logging_mixin.py:109} INFO - [2022-12-19 08:33:54,166] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:34:46,124] {processor.py:163} INFO - Started process (PID=1143) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:34:46,126] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:34:46,127] {logging_mixin.py:109} INFO - [2022-12-19 08:34:46,127] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:35:17,169] {logging_mixin.py:109} INFO - [2022-12-19 08:35:17,168] {timeout.py:36} ERROR - Process timed out, PID: 1143
+[2022-12-19 08:35:21,467] {logging_mixin.py:109} INFO - [2022-12-19 08:35:17,415] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/homework_dag.py
+Traceback (most recent call last):
+  File "<frozen importlib._bootstrap_external>", line 87, in _path_is_mode_type
+  File "<frozen importlib._bootstrap_external>", line 81, in _path_stat
+FileNotFoundError: [Errno 2] No such file or directory: '/home/airflow/.local/lib/python3.7/site-packages/grpc/__init__.cpython-37m-x86_64-linux-gnu.so'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/homework_dag.py", line 12, in <module>
+    from google.cloud import storage
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/storage/__init__.py", line 35, in <module>
+    from google.cloud.storage.batch import Batch
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/storage/batch.py", line 29, in <module>
+    from google.cloud import _helpers
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_helpers.py", line 37, in <module>
+    import grpc
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 963, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 906, in _find_spec
+  File "<frozen importlib._bootstrap_external>", line 1280, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 1252, in _get_spec
+  File "<frozen importlib._bootstrap_external>", line 1383, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 95, in _path_isfile
+  File "<frozen importlib._bootstrap_external>", line 87, in _path_is_mode_type
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 37, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/homework_dag.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.2.3/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.2.3/best-practices.html#reducing-dag-complexity, PID: 1143
+[2022-12-19 08:35:22,395] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:35:24,672] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 38.552 seconds
+[2022-12-19 08:36:12,749] {processor.py:163} INFO - Started process (PID=1170) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:36:19,467] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:36:23,669] {logging_mixin.py:109} INFO - [2022-12-19 08:36:23,645] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:39:14,616] {processor.py:163} INFO - Started process (PID=1215) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:39:15,398] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:39:15,666] {logging_mixin.py:109} INFO - [2022-12-19 08:39:15,665] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:39:22,185] {processor.py:163} INFO - Started process (PID=1217) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:39:22,188] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:39:22,196] {logging_mixin.py:109} INFO - [2022-12-19 08:39:22,195] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:39:57,328] {logging_mixin.py:109} INFO - [2022-12-19 08:39:55,909] {timeout.py:36} ERROR - Process timed out, PID: 1217
+[2022-12-19 08:39:58,105] {logging_mixin.py:109} INFO - [2022-12-19 08:39:57,412] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/homework_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/homework_dag.py", line 5, in <module>
+    import pandas as pd
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/__init__.py", line 11, in <module>
+    __import__(dependency)
+  File "/home/airflow/.local/lib/python3.7/site-packages/numpy/__init__.py", line 158, in <module>
+    from . import ma
+  File "/home/airflow/.local/lib/python3.7/site-packages/numpy/ma/__init__.py", line 42, in <module>
+    from . import core
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 857, in get_code
+  File "<frozen importlib._bootstrap_external>", line 525, in _compile_bytecode
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 37, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/homework_dag.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.2.3/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.2.3/best-practices.html#reducing-dag-complexity, PID: 1217
+[2022-12-19 08:39:59,306] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:40:01,111] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 38.959 seconds
+[2022-12-19 08:40:33,023] {processor.py:163} INFO - Started process (PID=1251) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:40:33,126] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:40:33,127] {logging_mixin.py:109} INFO - [2022-12-19 08:40:33,127] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:41:09,033] {logging_mixin.py:109} INFO - [2022-12-19 08:41:05,091] {timeout.py:36} ERROR - Process timed out, PID: 1251
+[2022-12-19 08:41:09,125] {logging_mixin.py:109} INFO - [2022-12-19 08:41:09,036] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/homework_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/homework_dag.py", line 5, in <module>
+    import pandas as pd
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/__init__.py", line 22, in <module>
+    from pandas.compat import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/compat/__init__.py", line 14, in <module>
+    from pandas._typing import F
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/_typing.py", line 214, in <module>
+    PositionalIndexer = Union[int, np.integer, slice, Sequence[int], np.ndarray]
+  File "/usr/local/lib/python3.7/typing.py", line 251, in inner
+    return cached(*args, **kwds)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 37, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/homework_dag.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.2.3/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.2.3/best-practices.html#reducing-dag-complexity, PID: 1251
+[2022-12-19 08:41:12,104] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:41:13,587] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 40.552 seconds
+[2022-12-19 08:41:56,940] {processor.py:163} INFO - Started process (PID=1277) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:41:58,450] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:41:59,094] {logging_mixin.py:109} INFO - [2022-12-19 08:41:59,028] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:42:30,441] {logging_mixin.py:109} INFO - [2022-12-19 08:42:30,413] {timeout.py:36} ERROR - Process timed out, PID: 1277
+[2022-12-19 08:42:30,599] {logging_mixin.py:109} INFO - [2022-12-19 08:42:30,450] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/homework_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/homework_dag.py", line 5, in <module>
+    import pandas as pd
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/__init__.py", line 50, in <module>
+    from pandas.core.api import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/api.py", line 24, in <module>
+    from pandas.core.algorithms import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/algorithms.py", line 75, in <module>
+    from pandas.core.array_algos.take import take_nd
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/array_algos/take.py", line 25, in <module>
+    from pandas.core.construction import ensure_wrapped_if_datetimelike
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 818, in get_code
+  File "<frozen importlib._bootstrap_external>", line 917, in get_data
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 37, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/homework_dag.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.2.3/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.2.3/best-practices.html#reducing-dag-complexity, PID: 1277
+[2022-12-19 08:42:30,859] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:42:30,925] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 34.087 seconds
+[2022-12-19 08:43:07,179] {processor.py:163} INFO - Started process (PID=1295) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:43:07,701] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:43:07,784] {logging_mixin.py:109} INFO - [2022-12-19 08:43:07,784] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:44:10,642] {processor.py:163} INFO - Started process (PID=1338) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:44:10,934] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:44:11,036] {logging_mixin.py:109} INFO - [2022-12-19 08:44:11,034] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:44:41,232] {logging_mixin.py:109} INFO - [2022-12-19 08:44:41,116] {timeout.py:36} ERROR - Process timed out, PID: 1338
+[2022-12-19 08:44:44,547] {logging_mixin.py:109} INFO - [2022-12-19 08:44:41,232] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/homework_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/homework_dag.py", line 5, in <module>
+    import pandas as pd
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/__init__.py", line 50, in <module>
+    from pandas.core.api import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/api.py", line 29, in <module>
+    from pandas.core.arrays import Categorical
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/arrays/__init__.py", line 1, in <module>
+    from pandas.core.arrays.base import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/arrays/base.py", line 69, in <module>
+    from pandas.core.sorting import (
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 857, in get_code
+  File "<frozen importlib._bootstrap_external>", line 525, in _compile_bytecode
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 37, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/homework_dag.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.2.3/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.2.3/best-practices.html#reducing-dag-complexity, PID: 1338
+[2022-12-19 08:44:50,428] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:44:50,845] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 40.837 seconds
+[2022-12-19 08:45:32,574] {processor.py:163} INFO - Started process (PID=1365) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:45:32,771] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:45:33,137] {logging_mixin.py:109} INFO - [2022-12-19 08:45:33,136] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:46:04,308] {logging_mixin.py:109} INFO - [2022-12-19 08:46:04,235] {timeout.py:36} ERROR - Process timed out, PID: 1365
+[2022-12-19 08:46:04,402] {logging_mixin.py:109} INFO - [2022-12-19 08:46:04,319] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/homework_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/homework_dag.py", line 5, in <module>
+    import pandas as pd
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/__init__.py", line 22, in <module>
+    from pandas.compat import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/compat/__init__.py", line 23, in <module>
+    from pandas.compat.pyarrow import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/compat/pyarrow.py", line 6, in <module>
+    import pyarrow as pa
+  File "/home/airflow/.local/lib/python3.7/site-packages/pyarrow/__init__.py", line 63, in <module>
+    import pyarrow.lib as _lib
+  File "<frozen importlib._bootstrap>", line 416, in parent
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 37, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/homework_dag.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.2.3/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.2.3/best-practices.html#reducing-dag-complexity, PID: 1365
+[2022-12-19 08:46:04,628] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:46:04,764] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 35.003 seconds
+[2022-12-19 08:46:34,962] {processor.py:163} INFO - Started process (PID=1401) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:46:34,963] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:46:34,964] {logging_mixin.py:109} INFO - [2022-12-19 08:46:34,963] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:47:29,353] {processor.py:163} INFO - Started process (PID=1429) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:47:29,354] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:47:29,357] {logging_mixin.py:109} INFO - [2022-12-19 08:47:29,357] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:47:34,147] {processor.py:654} INFO - DAG(s) dict_keys(['homework_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:47:34,193] {logging_mixin.py:109} INFO - [2022-12-19 08:47:34,193] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-19 08:47:34,242] {logging_mixin.py:109} INFO - [2022-12-19 08:47:34,242] {dag.py:2935} INFO - Setting next_dagrun for homework_dag to 2022-12-18 00:00:00+00:00
+[2022-12-19 08:47:34,267] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 4.917 seconds
+[2022-12-19 08:48:04,520] {processor.py:163} INFO - Started process (PID=1446) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:48:04,522] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:48:04,523] {logging_mixin.py:109} INFO - [2022-12-19 08:48:04,523] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:48:05,615] {processor.py:654} INFO - DAG(s) dict_keys(['homework_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:48:05,691] {logging_mixin.py:109} INFO - [2022-12-19 08:48:05,691] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-19 08:48:05,821] {logging_mixin.py:109} INFO - [2022-12-19 08:48:05,821] {dag.py:2935} INFO - Setting next_dagrun for homework_dag to 2022-12-18 00:00:00+00:00
+[2022-12-19 08:48:06,816] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 2.299 seconds
+[2022-12-19 08:48:46,153] {processor.py:163} INFO - Started process (PID=1474) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:48:46,695] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:48:47,142] {logging_mixin.py:109} INFO - [2022-12-19 08:48:47,141] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:49:17,446] {logging_mixin.py:109} INFO - [2022-12-19 08:49:17,209] {timeout.py:36} ERROR - Process timed out, PID: 1474
+[2022-12-19 08:49:23,922] {logging_mixin.py:109} INFO - [2022-12-19 08:49:17,512] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/homework_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/homework_dag.py", line 5, in <module>
+    import pandas as pd
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/__init__.py", line 50, in <module>
+    from pandas.core.api import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/api.py", line 48, in <module>
+    from pandas.core.groupby import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/groupby/__init__.py", line 1, in <module>
+    from pandas.core.groupby.generic import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/groupby/generic.py", line 73, in <module>
+    from pandas.core.frame import DataFrame
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/frame.py", line 456, in <module>
+    class DataFrame(NDFrame, OpsMixin):
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/frame.py", line 9172, in DataFrame
+    @Appender(_merge_doc, indents=2)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/util/_decorators.py", line 478, in __init__
+    self.addendum = indent(addendum, indents=indents)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/util/_decorators.py", line 495, in indent
+    return jointext.join(text.split("\n"))
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 37, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/homework_dag.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.2.3/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.2.3/best-practices.html#reducing-dag-complexity, PID: 1474
+[2022-12-19 08:49:24,640] {processor.py:690} INFO - Deactivated 1 DAGs which are no longer present in /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:49:24,647] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:49:25,142] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 40.248 seconds
+[2022-12-19 08:49:57,097] {processor.py:163} INFO - Started process (PID=1519) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:49:57,099] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:49:57,100] {logging_mixin.py:109} INFO - [2022-12-19 08:49:57,100] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:49:58,538] {processor.py:654} INFO - DAG(s) dict_keys(['homework_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:49:58,546] {logging_mixin.py:109} INFO - [2022-12-19 08:49:58,546] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-19 08:49:58,559] {logging_mixin.py:109} INFO - [2022-12-19 08:49:58,559] {dag.py:2935} INFO - Setting next_dagrun for homework_dag to 2022-12-18 00:00:00+00:00
+[2022-12-19 08:49:58,574] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 1.482 seconds
+[2022-12-19 08:50:29,185] {processor.py:163} INFO - Started process (PID=1546) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:50:29,186] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:50:29,187] {logging_mixin.py:109} INFO - [2022-12-19 08:50:29,187] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:50:29,908] {processor.py:654} INFO - DAG(s) dict_keys(['homework_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:50:29,916] {logging_mixin.py:109} INFO - [2022-12-19 08:50:29,916] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-19 08:50:29,928] {logging_mixin.py:109} INFO - [2022-12-19 08:50:29,928] {dag.py:2935} INFO - Setting next_dagrun for homework_dag to 2022-12-18 00:00:00+00:00
+[2022-12-19 08:50:29,941] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 0.759 seconds
+[2022-12-19 08:51:00,201] {processor.py:163} INFO - Started process (PID=1581) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:51:00,203] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:51:00,204] {logging_mixin.py:109} INFO - [2022-12-19 08:51:00,204] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:51:00,861] {processor.py:654} INFO - DAG(s) dict_keys(['homework_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:51:00,893] {logging_mixin.py:109} INFO - [2022-12-19 08:51:00,893] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-19 08:51:00,905] {logging_mixin.py:109} INFO - [2022-12-19 08:51:00,905] {dag.py:2935} INFO - Setting next_dagrun for homework_dag to 2022-12-18 00:00:00+00:00
+[2022-12-19 08:51:01,109] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 0.911 seconds
+[2022-12-19 08:51:31,239] {processor.py:163} INFO - Started process (PID=1608) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:51:31,240] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:51:31,241] {logging_mixin.py:109} INFO - [2022-12-19 08:51:31,241] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:51:31,966] {processor.py:654} INFO - DAG(s) dict_keys(['homework_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:51:31,976] {logging_mixin.py:109} INFO - [2022-12-19 08:51:31,976] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-19 08:51:31,990] {logging_mixin.py:109} INFO - [2022-12-19 08:51:31,990] {dag.py:2935} INFO - Setting next_dagrun for homework_dag to 2022-12-18 00:00:00+00:00
+[2022-12-19 08:51:32,005] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 0.769 seconds
+[2022-12-19 08:52:07,264] {processor.py:163} INFO - Started process (PID=1644) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:52:07,265] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:52:07,267] {logging_mixin.py:109} INFO - [2022-12-19 08:52:07,266] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:52:07,915] {processor.py:654} INFO - DAG(s) dict_keys(['homework_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:52:07,923] {logging_mixin.py:109} INFO - [2022-12-19 08:52:07,923] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-19 08:52:07,934] {logging_mixin.py:109} INFO - [2022-12-19 08:52:07,934] {dag.py:2935} INFO - Setting next_dagrun for homework_dag to 2022-12-18 00:00:00+00:00
+[2022-12-19 08:52:07,946] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 0.686 seconds
+[2022-12-19 08:52:38,195] {processor.py:163} INFO - Started process (PID=1671) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:52:38,196] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:52:38,197] {logging_mixin.py:109} INFO - [2022-12-19 08:52:38,197] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:52:38,807] {processor.py:654} INFO - DAG(s) dict_keys(['homework_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:52:38,816] {logging_mixin.py:109} INFO - [2022-12-19 08:52:38,816] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-19 08:52:38,830] {logging_mixin.py:109} INFO - [2022-12-19 08:52:38,829] {dag.py:2935} INFO - Setting next_dagrun for homework_dag to 2022-12-18 00:00:00+00:00
+[2022-12-19 08:52:38,838] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 0.645 seconds
+[2022-12-19 08:53:09,146] {processor.py:163} INFO - Started process (PID=1698) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:53:09,147] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:53:09,148] {logging_mixin.py:109} INFO - [2022-12-19 08:53:09,148] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:53:09,754] {processor.py:654} INFO - DAG(s) dict_keys(['homework_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:53:09,761] {logging_mixin.py:109} INFO - [2022-12-19 08:53:09,761] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-19 08:53:09,773] {logging_mixin.py:109} INFO - [2022-12-19 08:53:09,773] {dag.py:2935} INFO - Setting next_dagrun for homework_dag to 2022-12-18 00:00:00+00:00
+[2022-12-19 08:53:10,049] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 0.906 seconds
+[2022-12-19 08:53:40,241] {processor.py:163} INFO - Started process (PID=1736) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:53:40,243] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 08:53:40,244] {logging_mixin.py:109} INFO - [2022-12-19 08:53:40,244] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:53:40,932] {processor.py:654} INFO - DAG(s) dict_keys(['homework_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-19 08:53:40,941] {logging_mixin.py:109} INFO - [2022-12-19 08:53:40,941] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-19 08:53:40,956] {logging_mixin.py:109} INFO - [2022-12-19 08:53:40,955] {dag.py:2935} INFO - Setting next_dagrun for homework_dag to 2022-12-18 00:00:00+00:00
+[2022-12-19 08:53:41,426] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 1.189 seconds
+[2022-12-19 09:48:22,894] {processor.py:163} INFO - Started process (PID=39) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-19 09:48:22,896] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-19 09:48:22,897] {logging_mixin.py:109} INFO - [2022-12-19 09:48:22,897] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py

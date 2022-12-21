@@ -1,0 +1,22 @@
+[2022-12-03 17:25:46,555] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: homework_dag.local_to_gcs_task scheduled__2022-12-02T00:00:00+00:00 [queued]>
+[2022-12-03 17:25:46,568] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: homework_dag.local_to_gcs_task scheduled__2022-12-02T00:00:00+00:00 [queued]>
+[2022-12-03 17:25:46,569] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-03 17:25:46,570] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-12-03 17:25:46,570] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-03 17:25:46,585] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): local_to_gcs_task> on 2022-12-02 00:00:00+00:00
+[2022-12-03 17:25:46,592] {standard_task_runner.py:52} INFO - Started process 157 to run task
+[2022-12-03 17:25:46,595] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'homework_dag', 'local_to_gcs_task', 'scheduled__2022-12-02T00:00:00+00:00', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/homework_dag.py', '--cfg-path', '/tmp/tmp8bd6fhx1', '--error-file', '/tmp/tmphhazpjo2']
+[2022-12-03 17:25:46,596] {standard_task_runner.py:77} INFO - Job 6: Subtask local_to_gcs_task
+[2022-12-03 17:25:46,653] {logging_mixin.py:109} INFO - Running <TaskInstance: homework_dag.local_to_gcs_task scheduled__2022-12-02T00:00:00+00:00 [running]> on host 48f7180843d2
+[2022-12-03 17:25:46,711] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=homework_dag
+AIRFLOW_CTX_TASK_ID=local_to_gcs_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-02T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-02T00:00:00+00:00
+[2022-12-03 17:25:47,377] {python.py:175} INFO - Done. Returned value was: None
+[2022-12-03 17:25:47,393] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=homework_dag, task_id=local_to_gcs_task, execution_date=20221202T000000, start_date=20221203T172546, end_date=20221203T172547
+[2022-12-03 17:25:47,450] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-12-03 17:25:47,488] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

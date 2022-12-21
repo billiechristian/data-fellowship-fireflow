@@ -1,0 +1,7 @@
+[2022-12-12 06:10:09,554] {processor.py:163} INFO - Started process (PID=37) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-12 06:10:09,555] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-12 06:10:09,557] {logging_mixin.py:109} INFO - [2022-12-12 06:10:09,556] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-12 06:10:25,485] {processor.py:654} INFO - DAG(s) dict_keys(['homework_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-12 06:10:26,425] {logging_mixin.py:109} INFO - [2022-12-12 06:10:26,424] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-12 06:10:26,486] {logging_mixin.py:109} INFO - [2022-12-12 06:10:26,486] {dag.py:2935} INFO - Setting next_dagrun for homework_dag to 2022-12-11 00:00:00+00:00
+[2022-12-12 06:10:26,547] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 16.979 seconds

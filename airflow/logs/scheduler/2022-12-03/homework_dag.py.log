@@ -1,0 +1,90 @@
+[2022-12-03 17:23:43,805] {processor.py:163} INFO - Started process (PID=37) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-03 17:23:43,807] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-03 17:23:43,808] {logging_mixin.py:109} INFO - [2022-12-03 17:23:43,808] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-03 17:23:57,421] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-03 17:24:05,399] {logging_mixin.py:109} INFO - [2022-12-03 17:24:05,398] {manager.py:496} INFO - Created Permission View: can read on DAG:data_ingestion_gcs_dag
+[2022-12-03 17:24:05,410] {logging_mixin.py:109} INFO - [2022-12-03 17:24:05,410] {manager.py:496} INFO - Created Permission View: can edit on DAG:data_ingestion_gcs_dag
+[2022-12-03 17:24:05,411] {logging_mixin.py:109} INFO - [2022-12-03 17:24:05,410] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-03 17:24:05,418] {logging_mixin.py:109} INFO - [2022-12-03 17:24:05,418] {dag.py:2415} INFO - Creating ORM DAG for data_ingestion_gcs_dag
+[2022-12-03 17:24:05,430] {logging_mixin.py:109} INFO - [2022-12-03 17:24:05,430] {dag.py:2935} INFO - Setting next_dagrun for data_ingestion_gcs_dag to 2022-12-02 00:00:00+00:00
+[2022-12-03 17:24:05,455] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 21.642 seconds
+[2022-12-03 17:24:36,732] {processor.py:163} INFO - Started process (PID=73) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-03 17:24:36,741] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-03 17:24:36,746] {logging_mixin.py:109} INFO - [2022-12-03 17:24:36,745] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-03 17:24:38,508] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-03 17:24:38,520] {logging_mixin.py:109} INFO - [2022-12-03 17:24:38,519] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-03 17:24:38,534] {logging_mixin.py:109} INFO - [2022-12-03 17:24:38,534] {dag.py:2935} INFO - Setting next_dagrun for data_ingestion_gcs_dag to 2022-12-02 00:00:00+00:00
+[2022-12-03 17:24:38,547] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 1.845 seconds
+[2022-12-03 17:25:04,816] {processor.py:163} INFO - Started process (PID=100) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-03 17:25:04,818] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-03 17:25:04,819] {logging_mixin.py:109} INFO - [2022-12-03 17:25:04,819] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-03 17:25:05,531] {processor.py:690} INFO - Deactivated 1 DAGs which are no longer present in /opt/airflow/dags/homework_dag.py
+[2022-12-03 17:25:05,532] {processor.py:654} INFO - DAG(s) dict_keys(['homework_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-03 17:25:07,096] {logging_mixin.py:109} INFO - [2022-12-03 17:25:07,096] {manager.py:496} INFO - Created Permission View: can read on DAG:homework_dag
+[2022-12-03 17:25:07,107] {logging_mixin.py:109} INFO - [2022-12-03 17:25:07,107] {manager.py:496} INFO - Created Permission View: can edit on DAG:homework_dag
+[2022-12-03 17:25:07,108] {logging_mixin.py:109} INFO - [2022-12-03 17:25:07,108] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-03 17:25:07,117] {logging_mixin.py:109} INFO - [2022-12-03 17:25:07,116] {dag.py:2415} INFO - Creating ORM DAG for homework_dag
+[2022-12-03 17:25:07,130] {logging_mixin.py:109} INFO - [2022-12-03 17:25:07,129] {dag.py:2935} INFO - Setting next_dagrun for homework_dag to 2022-12-02 00:00:00+00:00
+[2022-12-03 17:25:07,149] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 2.336 seconds
+[2022-12-03 17:25:40,601] {processor.py:163} INFO - Started process (PID=136) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-03 17:25:40,612] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-03 17:25:40,628] {logging_mixin.py:109} INFO - [2022-12-03 17:25:40,626] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-03 17:25:43,813] {processor.py:654} INFO - DAG(s) dict_keys(['homework_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-03 17:25:43,822] {logging_mixin.py:109} INFO - [2022-12-03 17:25:43,821] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-03 17:25:43,841] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 3.281 seconds
+[2022-12-03 17:26:14,109] {processor.py:163} INFO - Started process (PID=164) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-03 17:26:14,117] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-03 17:26:14,127] {logging_mixin.py:109} INFO - [2022-12-03 17:26:14,127] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-03 17:26:18,229] {processor.py:654} INFO - DAG(s) dict_keys(['homework_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-03 17:26:18,246] {logging_mixin.py:109} INFO - [2022-12-03 17:26:18,245] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-03 17:26:18,291] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 4.205 seconds
+[2022-12-03 17:26:48,471] {processor.py:163} INFO - Started process (PID=200) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-03 17:26:48,474] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-03 17:26:48,477] {logging_mixin.py:109} INFO - [2022-12-03 17:26:48,477] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-03 17:26:50,141] {processor.py:654} INFO - DAG(s) dict_keys(['homework_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-03 17:26:50,152] {logging_mixin.py:109} INFO - [2022-12-03 17:26:50,152] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-03 17:26:50,181] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 1.720 seconds
+[2022-12-03 17:27:20,342] {processor.py:163} INFO - Started process (PID=236) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-03 17:27:20,343] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-03 17:27:20,344] {logging_mixin.py:109} INFO - [2022-12-03 17:27:20,344] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-03 17:27:21,035] {processor.py:654} INFO - DAG(s) dict_keys(['homework_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-03 17:27:21,045] {logging_mixin.py:109} INFO - [2022-12-03 17:27:21,045] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-03 17:27:21,067] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 0.729 seconds
+[2022-12-03 17:27:51,202] {processor.py:163} INFO - Started process (PID=263) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-03 17:27:51,204] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-03 17:27:51,205] {logging_mixin.py:109} INFO - [2022-12-03 17:27:51,205] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-03 17:27:51,896] {processor.py:654} INFO - DAG(s) dict_keys(['homework_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-03 17:27:51,904] {logging_mixin.py:109} INFO - [2022-12-03 17:27:51,904] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-03 17:27:51,927] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 0.728 seconds
+[2022-12-03 17:28:22,043] {processor.py:163} INFO - Started process (PID=299) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-03 17:28:22,045] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-03 17:28:22,046] {logging_mixin.py:109} INFO - [2022-12-03 17:28:22,046] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-03 17:28:22,763] {processor.py:654} INFO - DAG(s) dict_keys(['homework_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-03 17:28:22,771] {logging_mixin.py:109} INFO - [2022-12-03 17:28:22,771] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-03 17:28:22,888] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 0.847 seconds
+[2022-12-03 17:28:53,115] {processor.py:163} INFO - Started process (PID=326) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-03 17:28:53,116] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-03 17:28:53,117] {logging_mixin.py:109} INFO - [2022-12-03 17:28:53,117] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-03 17:28:53,754] {processor.py:654} INFO - DAG(s) dict_keys(['homework_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-03 17:28:53,762] {logging_mixin.py:109} INFO - [2022-12-03 17:28:53,762] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-03 17:28:53,782] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 0.669 seconds
+[2022-12-03 17:29:03,851] {processor.py:163} INFO - Started process (PID=344) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-03 17:29:03,853] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-03 17:29:03,854] {logging_mixin.py:109} INFO - [2022-12-03 17:29:03,854] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-03 17:29:04,651] {processor.py:654} INFO - DAG(s) dict_keys(['homework_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-03 17:29:05,023] {logging_mixin.py:109} INFO - [2022-12-03 17:29:05,023] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-03 17:29:05,052] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 1.205 seconds
+[2022-12-03 17:29:35,333] {processor.py:163} INFO - Started process (PID=380) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-03 17:29:35,336] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-03 17:29:35,337] {logging_mixin.py:109} INFO - [2022-12-03 17:29:35,337] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-03 17:29:36,064] {processor.py:654} INFO - DAG(s) dict_keys(['homework_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-03 17:29:36,073] {logging_mixin.py:109} INFO - [2022-12-03 17:29:36,072] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-03 17:29:36,086] {logging_mixin.py:109} INFO - [2022-12-03 17:29:36,085] {dag.py:2935} INFO - Setting next_dagrun for homework_dag to 2022-12-03T00:00:00+00:00
+[2022-12-03 17:29:36,095] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 0.766 seconds
+[2022-12-03 17:30:06,217] {processor.py:163} INFO - Started process (PID=407) to work on /opt/airflow/dags/homework_dag.py
+[2022-12-03 17:30:06,222] {processor.py:642} INFO - Processing file /opt/airflow/dags/homework_dag.py for tasks to queue
+[2022-12-03 17:30:06,223] {logging_mixin.py:109} INFO - [2022-12-03 17:30:06,222] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/homework_dag.py
+[2022-12-03 17:30:06,841] {processor.py:654} INFO - DAG(s) dict_keys(['homework_dag']) retrieved from /opt/airflow/dags/homework_dag.py
+[2022-12-03 17:30:06,848] {logging_mixin.py:109} INFO - [2022-12-03 17:30:06,848] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-03 17:30:06,861] {logging_mixin.py:109} INFO - [2022-12-03 17:30:06,861] {dag.py:2935} INFO - Setting next_dagrun for homework_dag to 2022-12-03T00:00:00+00:00
+[2022-12-03 17:30:06,870] {processor.py:171} INFO - Processing /opt/airflow/dags/homework_dag.py took 0.656 seconds

@@ -1,0 +1,22 @@
+[2022-12-03 17:25:43,682] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: homework_dag.format_to_csv_task scheduled__2022-12-02T00:00:00+00:00 [queued]>
+[2022-12-03 17:25:43,692] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: homework_dag.format_to_csv_task scheduled__2022-12-02T00:00:00+00:00 [queued]>
+[2022-12-03 17:25:43,692] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-03 17:25:43,693] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-12-03 17:25:43,693] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-03 17:25:43,704] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): format_to_csv_task> on 2022-12-02 00:00:00+00:00
+[2022-12-03 17:25:43,709] {standard_task_runner.py:52} INFO - Started process 142 to run task
+[2022-12-03 17:25:43,712] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'homework_dag', 'format_to_csv_task', 'scheduled__2022-12-02T00:00:00+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/homework_dag.py', '--cfg-path', '/tmp/tmp28omjd3l', '--error-file', '/tmp/tmpk8sk26ps']
+[2022-12-03 17:25:43,713] {standard_task_runner.py:77} INFO - Job 4: Subtask format_to_csv_task
+[2022-12-03 17:25:43,762] {logging_mixin.py:109} INFO - Running <TaskInstance: homework_dag.format_to_csv_task scheduled__2022-12-02T00:00:00+00:00 [running]> on host 48f7180843d2
+[2022-12-03 17:25:43,811] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=homework_dag
+AIRFLOW_CTX_TASK_ID=format_to_csv_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-02T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-02T00:00:00+00:00
+[2022-12-03 17:25:43,837] {python.py:175} INFO - Done. Returned value was: None
+[2022-12-03 17:25:43,846] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=homework_dag, task_id=format_to_csv_task, execution_date=20221202T000000, start_date=20221203T172543, end_date=20221203T172543
+[2022-12-03 17:25:43,885] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-12-03 17:25:43,932] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
