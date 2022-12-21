@@ -1,0 +1,69 @@
+[2022-12-21 14:37:20,317] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: fireflow_dag.load_to_gcs_task scheduled__2022-12-20T10:00:00+00:00 [queued]>
+[2022-12-21 14:37:20,331] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: fireflow_dag.load_to_gcs_task scheduled__2022-12-20T10:00:00+00:00 [queued]>
+[2022-12-21 14:37:20,331] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-21 14:37:20,332] {taskinstance.py:1239} INFO - Starting attempt 3 of 4
+[2022-12-21 14:37:20,332] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-21 14:37:20,346] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): load_to_gcs_task> on 2022-12-20 10:00:00+00:00
+[2022-12-21 14:37:20,351] {standard_task_runner.py:52} INFO - Started process 1329 to run task
+[2022-12-21 14:37:20,356] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'fireflow_dag', 'load_to_gcs_task', 'scheduled__2022-12-20T10:00:00+00:00', '--job-id', '61', '--raw', '--subdir', 'DAGS_FOLDER/fireflow_batch_dag.py', '--cfg-path', '/tmp/tmp6dv7v7z_', '--error-file', '/tmp/tmpj1emti48']
+[2022-12-21 14:37:20,357] {standard_task_runner.py:77} INFO - Job 61: Subtask load_to_gcs_task
+[2022-12-21 14:37:20,419] {logging_mixin.py:109} INFO - Running <TaskInstance: fireflow_dag.load_to_gcs_task scheduled__2022-12-20T10:00:00+00:00 [running]> on host 78bd7b303d21
+[2022-12-21 14:37:20,490] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=fireflow_dag
+AIRFLOW_CTX_TASK_ID=load_to_gcs_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-20T10:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-20T10:00:00+00:00
+[2022-12-21 14:37:20,514] {taskinstance.py:1700} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/fireflow_batch_dag.py", line 58, in load_data_to_gcs
+    blob.upload_from_filename(f'{path_to_local_home}/{filename}')
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/storage/blob.py", line 2720, in upload_from_filename
+    with open(filename, "rb") as file_obj:
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/customer.csv'
+[2022-12-21 14:37:20,533] {taskinstance.py:1277} INFO - Marking task as UP_FOR_RETRY. dag_id=fireflow_dag, task_id=load_to_gcs_task, execution_date=20221220T100000, start_date=20221221T143720, end_date=20221221T143720
+[2022-12-21 14:37:20,548] {standard_task_runner.py:92} ERROR - Failed to execute job 61 for task load_to_gcs_task
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 184, in _run_raw_task
+    error_file=args.error_file,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/fireflow_batch_dag.py", line 58, in load_data_to_gcs
+    blob.upload_from_filename(f'{path_to_local_home}/{filename}')
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/storage/blob.py", line 2720, in upload_from_filename
+    with open(filename, "rb") as file_obj:
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/customer.csv'
+[2022-12-21 14:37:20,570] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-12-21 14:37:20,619] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

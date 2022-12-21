@@ -1,0 +1,22 @@
+[2022-12-21 15:45:23,813] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: fireflow_dag.load_to_gcs_task manual__2022-12-21T15:41:57.792141+00:00 [queued]>
+[2022-12-21 15:45:23,822] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: fireflow_dag.load_to_gcs_task manual__2022-12-21T15:41:57.792141+00:00 [queued]>
+[2022-12-21 15:45:23,822] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-21 15:45:23,823] {taskinstance.py:1239} INFO - Starting attempt 2 of 3
+[2022-12-21 15:45:23,823] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-21 15:45:23,832] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): load_to_gcs_task> on 2022-12-21 15:41:57.792141+00:00
+[2022-12-21 15:45:23,837] {standard_task_runner.py:52} INFO - Started process 4509 to run task
+[2022-12-21 15:45:23,841] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'fireflow_dag', 'load_to_gcs_task', 'manual__2022-12-21T15:41:57.792141+00:00', '--job-id', '81', '--raw', '--subdir', 'DAGS_FOLDER/fireflow_batch_dag.py', '--cfg-path', '/tmp/tmpzj2i1jky', '--error-file', '/tmp/tmpmvh1po_l']
+[2022-12-21 15:45:23,842] {standard_task_runner.py:77} INFO - Job 81: Subtask load_to_gcs_task
+[2022-12-21 15:45:23,890] {logging_mixin.py:109} INFO - Running <TaskInstance: fireflow_dag.load_to_gcs_task manual__2022-12-21T15:41:57.792141+00:00 [running]> on host 78bd7b303d21
+[2022-12-21 15:45:23,940] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=fireflow_dag
+AIRFLOW_CTX_TASK_ID=load_to_gcs_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-21T15:41:57.792141+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-21T15:41:57.792141+00:00
+[2022-12-21 15:45:29,565] {python.py:175} INFO - Done. Returned value was: None
+[2022-12-21 15:45:29,577] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=fireflow_dag, task_id=load_to_gcs_task, execution_date=20221221T154157, start_date=20221221T154523, end_date=20221221T154529
+[2022-12-21 15:45:29,598] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-12-21 15:45:29,631] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

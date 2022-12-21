@@ -1,0 +1,95 @@
+[2022-12-21 15:22:38,411] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: fireflow_dag.fact_table_gcs_to_bigquery_task manual__2022-12-21T15:10:08.691534+00:00 [queued]>
+[2022-12-21 15:22:38,419] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: fireflow_dag.fact_table_gcs_to_bigquery_task manual__2022-12-21T15:10:08.691534+00:00 [queued]>
+[2022-12-21 15:22:38,420] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-21 15:22:38,420] {taskinstance.py:1239} INFO - Starting attempt 4 of 4
+[2022-12-21 15:22:38,421] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-21 15:22:38,431] {taskinstance.py:1259} INFO - Executing <Task(GCSToBigQueryOperator): fact_table_gcs_to_bigquery_task> on 2022-12-21 15:10:08.691534+00:00
+[2022-12-21 15:22:38,435] {standard_task_runner.py:52} INFO - Started process 3424 to run task
+[2022-12-21 15:22:38,439] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'fireflow_dag', 'fact_table_gcs_to_bigquery_task', 'manual__2022-12-21T15:10:08.691534+00:00', '--job-id', '71', '--raw', '--subdir', 'DAGS_FOLDER/fireflow_batch_dag.py', '--cfg-path', '/tmp/tmp_69rrc6l', '--error-file', '/tmp/tmpky353bsy']
+[2022-12-21 15:22:38,440] {standard_task_runner.py:77} INFO - Job 71: Subtask fact_table_gcs_to_bigquery_task
+[2022-12-21 15:22:38,484] {logging_mixin.py:109} INFO - Running <TaskInstance: fireflow_dag.fact_table_gcs_to_bigquery_task manual__2022-12-21T15:10:08.691534+00:00 [running]> on host 78bd7b303d21
+[2022-12-21 15:22:38,527] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=fireflow_dag
+AIRFLOW_CTX_TASK_ID=fact_table_gcs_to_bigquery_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-21T15:10:08.691534+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-21T15:10:08.691534+00:00
+[2022-12-21 15:22:38,528] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/providers/google/cloud/transfers/gcs_to_bigquery.py:261: DeprecationWarning: The bigquery_conn_id parameter has been deprecated. You should pass the gcp_conn_id parameter.
+  impersonation_chain=self.impersonation_chain,
+
+[2022-12-21 15:22:38,529] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2022-12-21 15:22:38,530] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/providers/google/cloud/hooks/bigquery.py:141: DeprecationWarning: This method will be deprecated. Please use `BigQueryHook.get_client` method
+  "This method will be deprecated. Please use `BigQueryHook.get_client` method", DeprecationWarning
+
+[2022-12-21 15:22:38,860] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/models/taskinstance.py:1511: DeprecationWarning: This method is deprecated. Please use `***.providers.google.cloud.hooks.bigquery.BigQueryHook.run_load`
+  result = execute_callable(context=context)
+
+[2022-12-21 15:22:38,861] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/providers/google/cloud/hooks/bigquery.py:1772: DeprecationWarning: This method is deprecated. Please use `BigQueryHook.insert_job` method.
+  "This method is deprecated. Please use `BigQueryHook.insert_job` method.", DeprecationWarning
+
+[2022-12-21 15:22:38,862] {bigquery.py:1637} INFO - Inserting job ***_1671636158861965_4f9c63b7ddfa09829c397e540ba6107b
+[2022-12-21 15:22:39,753] {taskinstance.py:1700} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/transfers/gcs_to_bigquery.py", line 329, in execute
+    description=self.description,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/hooks/bigquery.py", line 2682, in run_load
+    return self.hook.run_load(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/hooks/bigquery.py", line 1917, in run_load
+    job = self.insert_job(configuration=configuration, project_id=self.project_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/common/hooks/base_google.py", line 430, in inner_wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/hooks/bigquery.py", line 1639, in insert_job
+    job.result()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/job/base.py", line 727, in result
+    return super(_AsyncJob, self).result(timeout=timeout, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/api_core/future/polling.py", line 135, in result
+    raise self._exception
+google.api_core.exceptions.BadRequest: 400 Cannot read and write in different locations: source: US, destination: asia-south1
+[2022-12-21 15:22:39,765] {taskinstance.py:1277} INFO - Marking task as FAILED. dag_id=fireflow_dag, task_id=fact_table_gcs_to_bigquery_task, execution_date=20221221T151008, start_date=20221221T152238, end_date=20221221T152239
+[2022-12-21 15:22:39,782] {standard_task_runner.py:92} ERROR - Failed to execute job 71 for task fact_table_gcs_to_bigquery_task
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 184, in _run_raw_task
+    error_file=args.error_file,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/transfers/gcs_to_bigquery.py", line 329, in execute
+    description=self.description,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/hooks/bigquery.py", line 2682, in run_load
+    return self.hook.run_load(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/hooks/bigquery.py", line 1917, in run_load
+    job = self.insert_job(configuration=configuration, project_id=self.project_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/common/hooks/base_google.py", line 430, in inner_wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/hooks/bigquery.py", line 1639, in insert_job
+    job.result()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/job/base.py", line 727, in result
+    return super(_AsyncJob, self).result(timeout=timeout, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/api_core/future/polling.py", line 135, in result
+    raise self._exception
+google.api_core.exceptions.BadRequest: 400 Cannot read and write in different locations: source: US, destination: asia-south1
+[2022-12-21 15:22:39,816] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-12-21 15:22:39,853] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

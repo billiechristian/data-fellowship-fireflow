@@ -1,0 +1,35 @@
+[2022-12-21 15:59:52,518] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: fireflow_dag.education_gcs_to_bigquery_task scheduled__2022-12-20T10:00:00+00:00 [queued]>
+[2022-12-21 15:59:52,527] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: fireflow_dag.education_gcs_to_bigquery_task scheduled__2022-12-20T10:00:00+00:00 [queued]>
+[2022-12-21 15:59:52,527] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-21 15:59:52,528] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-12-21 15:59:52,528] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-21 15:59:52,538] {taskinstance.py:1259} INFO - Executing <Task(GCSToBigQueryOperator): education_gcs_to_bigquery_task> on 2022-12-20 10:00:00+00:00
+[2022-12-21 15:59:52,542] {standard_task_runner.py:52} INFO - Started process 579 to run task
+[2022-12-21 15:59:52,545] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'fireflow_dag', 'education_gcs_to_bigquery_task', 'scheduled__2022-12-20T10:00:00+00:00', '--job-id', '12', '--raw', '--subdir', 'DAGS_FOLDER/fireflow_batch_dag.py', '--cfg-path', '/tmp/tmps4vpbgg6', '--error-file', '/tmp/tmpmamlgz6h']
+[2022-12-21 15:59:52,547] {standard_task_runner.py:77} INFO - Job 12: Subtask education_gcs_to_bigquery_task
+[2022-12-21 15:59:52,614] {logging_mixin.py:109} INFO - Running <TaskInstance: fireflow_dag.education_gcs_to_bigquery_task scheduled__2022-12-20T10:00:00+00:00 [running]> on host ffb0f01832af
+[2022-12-21 15:59:52,661] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=fireflow_dag
+AIRFLOW_CTX_TASK_ID=education_gcs_to_bigquery_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-20T10:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-20T10:00:00+00:00
+[2022-12-21 15:59:52,662] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/providers/google/cloud/transfers/gcs_to_bigquery.py:261: DeprecationWarning: The bigquery_conn_id parameter has been deprecated. You should pass the gcp_conn_id parameter.
+  impersonation_chain=self.impersonation_chain,
+
+[2022-12-21 15:59:52,664] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2022-12-21 15:59:52,665] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/providers/google/cloud/hooks/bigquery.py:141: DeprecationWarning: This method will be deprecated. Please use `BigQueryHook.get_client` method
+  "This method will be deprecated. Please use `BigQueryHook.get_client` method", DeprecationWarning
+
+[2022-12-21 15:59:52,972] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/models/taskinstance.py:1511: DeprecationWarning: This method is deprecated. Please use `***.providers.google.cloud.hooks.bigquery.BigQueryHook.run_load`
+  result = execute_callable(context=context)
+
+[2022-12-21 15:59:52,972] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/providers/google/cloud/hooks/bigquery.py:1772: DeprecationWarning: This method is deprecated. Please use `BigQueryHook.insert_job` method.
+  "This method is deprecated. Please use `BigQueryHook.insert_job` method.", DeprecationWarning
+
+[2022-12-21 15:59:52,973] {bigquery.py:1637} INFO - Inserting job ***_1671638392973341_88fea9558440cad3a34cbf702c144927
+[2022-12-21 15:59:55,218] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=fireflow_dag, task_id=education_gcs_to_bigquery_task, execution_date=20221220T100000, start_date=20221221T155952, end_date=20221221T155955
+[2022-12-21 15:59:55,255] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-12-21 15:59:55,288] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

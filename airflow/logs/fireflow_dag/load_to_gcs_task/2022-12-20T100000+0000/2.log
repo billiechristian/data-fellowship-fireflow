@@ -1,0 +1,91 @@
+[2022-12-21 14:26:08,828] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: fireflow_dag.load_to_gcs_task scheduled__2022-12-20T10:00:00+00:00 [queued]>
+[2022-12-21 14:26:08,837] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: fireflow_dag.load_to_gcs_task scheduled__2022-12-20T10:00:00+00:00 [queued]>
+[2022-12-21 14:26:08,838] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-21 14:26:08,838] {taskinstance.py:1239} INFO - Starting attempt 2 of 2
+[2022-12-21 14:26:08,839] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-21 14:26:08,849] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): load_to_gcs_task> on 2022-12-20 10:00:00+00:00
+[2022-12-21 14:26:08,853] {standard_task_runner.py:52} INFO - Started process 819 to run task
+[2022-12-21 14:26:08,856] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'fireflow_dag', 'load_to_gcs_task', 'scheduled__2022-12-20T10:00:00+00:00', '--job-id', '60', '--raw', '--subdir', 'DAGS_FOLDER/fireflow_batch_dag.py', '--cfg-path', '/tmp/tmpdne1i55b', '--error-file', '/tmp/tmp5dalbk7b']
+[2022-12-21 14:26:08,857] {standard_task_runner.py:77} INFO - Job 60: Subtask load_to_gcs_task
+[2022-12-21 14:26:08,901] {logging_mixin.py:109} INFO - Running <TaskInstance: fireflow_dag.load_to_gcs_task scheduled__2022-12-20T10:00:00+00:00 [running]> on host 78bd7b303d21
+[2022-12-21 14:26:08,942] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=fireflow_dag
+AIRFLOW_CTX_TASK_ID=load_to_gcs_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-20T10:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-20T10:00:00+00:00
+[2022-12-21 14:26:09,001] {taskinstance.py:1700} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/fireflow_batch_dag.py", line 58, in load_data_to_gcs
+    blob.upload_from_filename(filename)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/storage/blob.py", line 2720, in upload_from_filename
+    with open(filename, "rb") as file_obj:
+IsADirectoryError: [Errno 21] Is a directory: '/'
+[2022-12-21 14:26:09,016] {taskinstance.py:1277} INFO - Marking task as FAILED. dag_id=fireflow_dag, task_id=load_to_gcs_task, execution_date=20221220T100000, start_date=20221221T142608, end_date=20221221T142609
+[2022-12-21 14:26:09,026] {standard_task_runner.py:92} ERROR - Failed to execute job 60 for task load_to_gcs_task
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 184, in _run_raw_task
+    error_file=args.error_file,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/fireflow_batch_dag.py", line 58, in load_data_to_gcs
+    blob.upload_from_filename(filename)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/storage/blob.py", line 2720, in upload_from_filename
+    with open(filename, "rb") as file_obj:
+IsADirectoryError: [Errno 21] Is a directory: '/'
+[2022-12-21 14:26:09,069] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-12-21 14:26:09,103] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-12-21 15:56:16,233] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: fireflow_dag.load_to_gcs_task scheduled__2022-12-20T10:00:00+00:00 [queued]>
+[2022-12-21 15:56:16,244] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: fireflow_dag.load_to_gcs_task scheduled__2022-12-20T10:00:00+00:00 [queued]>
+[2022-12-21 15:56:16,245] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-21 15:56:16,246] {taskinstance.py:1239} INFO - Starting attempt 2 of 3
+[2022-12-21 15:56:16,246] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-21 15:56:16,256] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): load_to_gcs_task> on 2022-12-20 10:00:00+00:00
+[2022-12-21 15:56:16,260] {standard_task_runner.py:52} INFO - Started process 403 to run task
+[2022-12-21 15:56:16,263] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'fireflow_dag', 'load_to_gcs_task', 'scheduled__2022-12-20T10:00:00+00:00', '--job-id', '8', '--raw', '--subdir', 'DAGS_FOLDER/fireflow_batch_dag.py', '--cfg-path', '/tmp/tmp1_nhkrgx', '--error-file', '/tmp/tmpr67w02_u']
+[2022-12-21 15:56:16,265] {standard_task_runner.py:77} INFO - Job 8: Subtask load_to_gcs_task
+[2022-12-21 15:56:16,312] {logging_mixin.py:109} INFO - Running <TaskInstance: fireflow_dag.load_to_gcs_task scheduled__2022-12-20T10:00:00+00:00 [running]> on host ffb0f01832af
+[2022-12-21 15:56:16,359] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=fireflow_dag
+AIRFLOW_CTX_TASK_ID=load_to_gcs_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-20T10:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-20T10:00:00+00:00
+[2022-12-21 15:56:20,528] {python.py:175} INFO - Done. Returned value was: None
+[2022-12-21 15:56:20,539] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=fireflow_dag, task_id=load_to_gcs_task, execution_date=20221220T100000, start_date=20221221T155616, end_date=20221221T155620
+[2022-12-21 15:56:20,578] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-12-21 15:56:20,653] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

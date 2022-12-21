@@ -63,7 +63,7 @@ x-airflow-common:
 
     # TODO: Please change GCP_PROJECT_ID & GCP_GCS_BUCKET, as per your config
     GCP_PROJECT_ID: 'iykra-df8'
-    GCP_GCS_BUCKET: 'data-fellowship-8-billie'
+    GCP_GCS_BUCKET: 'fireflow_iykra-df8'
 
   volumes:
     - ./dags:/opt/airflow/dags

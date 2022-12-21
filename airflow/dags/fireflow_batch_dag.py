@@ -15,7 +15,7 @@ import pyarrow.csv as pv
 import pyarrow.parquet as pq
 from datetime import date as dt
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"]= '../../credentials/fireflow-creds.json'
+# os.environ["GOOGLE_APPLICATION_CREDENTIALS"]= '../../credentials/fireflow-creds.json'
 
 PROJECT_ID = os.environ.get("GCP_PROJECT_ID")
 BUCKET = os.environ.get("GCP_GCS_BUCKET")
@@ -28,6 +28,8 @@ path_to_local_home = os.environ.get("AIRFLOW_HOME", "/opt/airflow/")
 BIGQUERY_DATASET = os.environ.get("BIGQUERY_DATASET", 'fireflow_dataset')
 
 # GITHUB DATA URL
+date = dt.today().strftime("%d")
+
 customer = 'https://raw.githubusercontent.com/billiechristian/data-fellowship-fireflow/main/data/customer.csv'
 education = 'https://raw.githubusercontent.com/billiechristian/data-fellowship-fireflow/main/data/education.csv'
 job = 'https://raw.githubusercontent.com/billiechristian/data-fellowship-fireflow/main/data/job.csv'
@@ -37,13 +39,12 @@ training_course = 'https://raw.githubusercontent.com/billiechristian/data-fellow
 fact = f'https://raw.githubusercontent.com/billiechristian/data-fellowship-fireflow/main/data/data_split/2022-01-{date}.csv'
 
 
-date = dt.today().strftime("%d")
 url_list = [customer, education, job, salesperson, sales_training, training_course, fact]
 local_file_name = ['customer.csv', 'education.csv', 'job.csv', 'salesperson.csv', 'sales_training.csv', 'training_course.csv', f'fact_table_{date}.csv']
 
 def download_github_data (URL_LIST, LOCAL_FILE_NAME):
     for url, filename in zip(URL_LIST, LOCAL_FILE_NAME):
-        os.system(f"wget {url} -O {path_to_local_home}/{filename}")
+        os.system(f"curl -sSL {url} > {path_to_local_home}/{filename}")
 
 def load_data_to_gcs(bucket, object_name, local_file_name):
     storage.blob._MAX_MULTIPART_SIZE = 5 * 1024 * 1024  # 5 MB
@@ -54,7 +55,7 @@ def load_data_to_gcs(bucket, object_name, local_file_name):
 
     for filename, object in zip(local_file_name, object_name) :
         blob = bucket.blob(object)
-        blob.upload_from_filename(filename)
+        blob.upload_from_filename(f'{path_to_local_home}/{filename}')
 
 
 default_args = {
@@ -87,8 +88,8 @@ with DAG(
             python_callable=load_data_to_gcs,
             op_kwargs={
                 "bucket": BUCKET,
-                "object_name": f"data/{local_file_name}",
-                "local_file_name": f"{path_to_local_home}/{local_file_name}",
+                "object_name": list(map(lambda x: 'data/' + x, local_file_name)),
+                "local_file_name": local_file_name,
             },
     )
 
@@ -102,7 +103,7 @@ with DAG(
         field_delimiter=',',
         schema_fields=[
         {'name': 'date', 'type': 'DATE', 'mode': 'NULLABLE'},
-        {'name': 'customer_id', 'type': 'INEGER', 'mode': 'NULLABLE'},
+        {'name': 'customer_id', 'type': 'INTEGER', 'mode': 'NULLABLE'},
         {'name': 'contact', 'type': 'STRING', 'mode': 'NULLABLE'},
         {'name': 'duration', 'type': 'INTEGER', 'mode': 'NULLABLE'},
         {'name': 'campaign', 'type': 'INTEGER', 'mode': 'NULLABLE'},
@@ -113,12 +114,12 @@ with DAG(
         {'name': 'cons_price_idx', 'type': 'STRING', 'mode': 'NULLABLE'},
         {'name': 'cons_conf_idx', 'type': 'FLOAT', 'mode': 'NULLABLE'},
         {'name': 'euribor3m', 'type': 'STRING', 'mode': 'NULLABLE'},
-        {'name': 'nr_employed', 'type': 'INTEGER', 'mode': 'NULLABLE'},
+        {'name': 'nr_employed', 'type': 'FLOAT', 'mode': 'NULLABLE'},
         {'name': 'y', 'type': 'STRING', 'mode': 'NULLABLE'},
         {'name': 'sales_id', 'type': 'STRING', 'mode': 'NULLABLE'},
     ],
     create_disposition='CREATE_IF_NEEDED',
-    write_disposition='WRITE_TRUNCATE',
+    write_disposition='WRITE_APPEND',
     time_partitioning={
                         "type": "DAY",
                         # "expirationMs": string,
@@ -135,7 +136,7 @@ with DAG(
         skip_leading_rows=1,
         field_delimiter=',',
         schema_fields=[
-        {'name': 'id', 'type': 'INEGER', 'mode': 'NULLABLE'},
+        {'name': 'id', 'type': 'INTEGER', 'mode': 'NULLABLE'},
         {'name': 'age', 'type': 'INTEGER', 'mode': 'NULLABLE'},
         {'name': 'sex', 'type': 'STRING', 'mode': 'NULLABLE'},
         {'name': 'job_id', 'type': 'INTEGER', 'mode': 'NULLABLE'},
@@ -158,7 +159,7 @@ with DAG(
         skip_leading_rows=1,
         field_delimiter=',',
         schema_fields=[
-        {'name': 'education_id', 'type': 'INEGER', 'mode': 'NULLABLE'},
+        {'name': 'education_id', 'type': 'INTEGER', 'mode': 'NULLABLE'},
         {'name': 'education_level', 'type': 'STRING', 'mode': 'NULLABLE'},
         {'name': 'description', 'type': 'STRING', 'mode': 'NULLABLE'},
     ],
@@ -174,7 +175,7 @@ with DAG(
         skip_leading_rows=1,
         field_delimiter=',',
         schema_fields=[
-        {'name': 'job_id', 'type': 'INEGER', 'mode': 'NULLABLE'},
+        {'name': 'job_id', 'type': 'INTEGER', 'mode': 'NULLABLE'},
         {'name': 'description', 'type': 'STRING', 'mode': 'NULLABLE'},
         {'name': 'average_annual_salary', 'type': 'INTEGER', 'mode': 'NULLABLE'},
         {'name': 'average_age', 'type': 'FLOAT', 'mode': 'NULLABLE'},
@@ -191,7 +192,7 @@ with DAG(
         skip_leading_rows=1,
         field_delimiter=',',
         schema_fields=[
-        {'name': 'id', 'type': 'INEGER', 'mode': 'NULLABLE'},
+        {'name': 'id', 'type': 'INTEGER', 'mode': 'NULLABLE'},
         {'name': 'name', 'type': 'STRING', 'mode': 'NULLABLE'},
         {'name': 'age', 'type': 'INTEGER', 'mode': 'NULLABLE'},
         {'name': 'city', 'type': 'STRING', 'mode': 'NULLABLE'},
@@ -209,7 +210,7 @@ with DAG(
         skip_leading_rows=1,
         field_delimiter=',',
         schema_fields=[
-        {'name': 'sales_id', 'type': 'INEGER', 'mode': 'NULLABLE'},
+        {'name': 'sales_id', 'type': 'INTEGER', 'mode': 'NULLABLE'},
         {'name': 'training_id', 'type': 'INTEGER', 'mode': 'NULLABLE'},
         {'name': 'status', 'type': 'STRING', 'mode': 'NULLABLE'},
         {'name': 'start_date', 'type': 'DATE', 'mode': 'NULLABLE'},
@@ -227,7 +228,7 @@ with DAG(
         skip_leading_rows=1,
         field_delimiter=',',
         schema_fields=[
-        {'name': 'id', 'type': 'INEGER', 'mode': 'NULLABLE'},
+        {'name': 'id', 'type': 'INTEGER', 'mode': 'NULLABLE'},
         {'name': 'training_course', 'type': 'STRING', 'mode': 'NULLABLE'},
         {'name': 'description', 'type': 'STRING', 'mode': 'NULLABLE'},
     ],

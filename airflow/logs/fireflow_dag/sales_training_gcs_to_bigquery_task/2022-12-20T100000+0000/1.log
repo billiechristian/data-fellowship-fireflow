@@ -1,0 +1,35 @@
+[2022-12-21 16:05:11,559] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: fireflow_dag.sales_training_gcs_to_bigquery_task scheduled__2022-12-20T10:00:00+00:00 [queued]>
+[2022-12-21 16:05:11,571] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: fireflow_dag.sales_training_gcs_to_bigquery_task scheduled__2022-12-20T10:00:00+00:00 [queued]>
+[2022-12-21 16:05:11,571] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-21 16:05:11,572] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-12-21 16:05:11,572] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-21 16:05:11,585] {taskinstance.py:1259} INFO - Executing <Task(GCSToBigQueryOperator): sales_training_gcs_to_bigquery_task> on 2022-12-20 10:00:00+00:00
+[2022-12-21 16:05:11,591] {standard_task_runner.py:52} INFO - Started process 833 to run task
+[2022-12-21 16:05:11,594] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'fireflow_dag', 'sales_training_gcs_to_bigquery_task', 'scheduled__2022-12-20T10:00:00+00:00', '--job-id', '16', '--raw', '--subdir', 'DAGS_FOLDER/fireflow_batch_dag.py', '--cfg-path', '/tmp/tmp_b9hl0vg', '--error-file', '/tmp/tmp1dor4btq']
+[2022-12-21 16:05:11,596] {standard_task_runner.py:77} INFO - Job 16: Subtask sales_training_gcs_to_bigquery_task
+[2022-12-21 16:05:11,645] {logging_mixin.py:109} INFO - Running <TaskInstance: fireflow_dag.sales_training_gcs_to_bigquery_task scheduled__2022-12-20T10:00:00+00:00 [running]> on host ffb0f01832af
+[2022-12-21 16:05:11,703] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=fireflow_dag
+AIRFLOW_CTX_TASK_ID=sales_training_gcs_to_bigquery_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-20T10:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-20T10:00:00+00:00
+[2022-12-21 16:05:11,704] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/providers/google/cloud/transfers/gcs_to_bigquery.py:261: DeprecationWarning: The bigquery_conn_id parameter has been deprecated. You should pass the gcp_conn_id parameter.
+  impersonation_chain=self.impersonation_chain,
+
+[2022-12-21 16:05:11,705] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2022-12-21 16:05:11,706] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/providers/google/cloud/hooks/bigquery.py:141: DeprecationWarning: This method will be deprecated. Please use `BigQueryHook.get_client` method
+  "This method will be deprecated. Please use `BigQueryHook.get_client` method", DeprecationWarning
+
+[2022-12-21 16:05:12,027] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/models/taskinstance.py:1511: DeprecationWarning: This method is deprecated. Please use `***.providers.google.cloud.hooks.bigquery.BigQueryHook.run_load`
+  result = execute_callable(context=context)
+
+[2022-12-21 16:05:12,028] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/providers/google/cloud/hooks/bigquery.py:1772: DeprecationWarning: This method is deprecated. Please use `BigQueryHook.insert_job` method.
+  "This method is deprecated. Please use `BigQueryHook.insert_job` method.", DeprecationWarning
+
+[2022-12-21 16:05:12,029] {bigquery.py:1637} INFO - Inserting job ***_1671638712028583_52969f23eea510939196af4b45f6bd79
+[2022-12-21 16:05:14,645] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=fireflow_dag, task_id=sales_training_gcs_to_bigquery_task, execution_date=20221220T100000, start_date=20221221T160511, end_date=20221221T160514
+[2022-12-21 16:05:14,701] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-12-21 16:05:14,742] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
