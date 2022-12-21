@@ -10,20 +10,22 @@ from airflow.operators.bash import BashOperator
 from airflow.operators.python import PythonOperator
 
 from google.cloud import storage
-from airflow.providers.google.cloud.operators.bigquery import BigQueryCreateExternalTableOperator
+from airflow.contrib.operators.gcs_to_bq import GCSToBigQueryOperator
 import pyarrow.csv as pv
 import pyarrow.parquet as pq
+from datetime import date as dt
+
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"]= '../../credentials/fireflow-creds.json'
 
 PROJECT_ID = os.environ.get("GCP_PROJECT_ID")
 BUCKET = os.environ.get("GCP_GCS_BUCKET")
 
 
-dataset_file = "acs-usa.csv"
-dataset_url = "https://datausa.io/api/data?drilldowns=Nation&measures=Population"
+
+
 path_to_local_home = os.environ.get("AIRFLOW_HOME", "/opt/airflow/")
 # path_to_local_home = "/opt/airflow/"
-parquet_file = dataset_file.replace('.csv', '.parquet')
-BIGQUERY_DATASET = os.environ.get("BIGQUERY_DATASET", 'homework_modul2')
+BIGQUERY_DATASET = os.environ.get("BIGQUERY_DATASET", 'fireflow_dataset')
 
 # GITHUB DATA URL
 customer = 'https://raw.githubusercontent.com/billiechristian/data-fellowship-fireflow/main/data/customer.csv'
@@ -32,8 +34,10 @@ job = 'https://raw.githubusercontent.com/billiechristian/data-fellowship-fireflo
 salesperson = 'https://raw.githubusercontent.com/billiechristian/data-fellowship-fireflow/main/data/salesperson.csv'
 sales_training = 'https://raw.githubusercontent.com/billiechristian/data-fellowship-fireflow/main/data/salesperson_training.csv'
 training_course = 'https://raw.githubusercontent.com/billiechristian/data-fellowship-fireflow/main/data/training_course.csv'
-fact = f'https://raw.githubusercontent.com/billiechristian/data-fellowship-fireflow/main/data/data_split/fact_table_{date}.csv'
+fact = f'https://raw.githubusercontent.com/billiechristian/data-fellowship-fireflow/main/data/data_split/2022-01-{date}.csv'
 
+
+date = dt.today().strftime("%d")
 url_list = [customer, education, job, salesperson, sales_training, training_course, fact]
 local_file_name = ['customer.csv', 'education.csv', 'job.csv', 'salesperson.csv', 'sales_training.csv', 'training_course.csv', f'fact_table_{date}.csv']
 
@@ -51,7 +55,6 @@ def load_data_to_gcs(bucket, object_name, local_file_name):
     for filename, object in zip(local_file_name, object_name) :
         blob = bucket.blob(object)
         blob.upload_from_filename(filename)
-
 
 
 default_args = {
@@ -79,7 +82,7 @@ with DAG(
             'LOCAL_FILE_NAME': local_file_name},
     )
 
-    load_to_gcs = PythonOperator(
+    load_to_gcs_task = PythonOperator(
             task_id="load_to_gcs_task",
             python_callable=load_data_to_gcs,
             op_kwargs={
@@ -87,128 +90,156 @@ with DAG(
                 "object_name": f"data/{local_file_name}",
                 "local_file_name": f"{path_to_local_home}/{local_file_name}",
             },
-    ),
+    )
 
+    fact_table_gcs_to_bigquery_task = GCSToBigQueryOperator(
+        task_id="fact_table_gcs_to_bigquery_task",
+        bucket= BUCKET,
+        source_objects=[f"data/fact_table_{date}.csv"],
+        destination_project_dataset_table= "{}.{}.{}".format(PROJECT_ID,BIGQUERY_DATASET,"Fact_Table"),
+        source_format='csv',
+        skip_leading_rows=1,
+        field_delimiter=',',
+        schema_fields=[
+        {'name': 'date', 'type': 'DATE', 'mode': 'NULLABLE'},
+        {'name': 'customer_id', 'type': 'INEGER', 'mode': 'NULLABLE'},
+        {'name': 'contact', 'type': 'STRING', 'mode': 'NULLABLE'},
+        {'name': 'duration', 'type': 'INTEGER', 'mode': 'NULLABLE'},
+        {'name': 'campaign', 'type': 'INTEGER', 'mode': 'NULLABLE'},
+        {'name': 'pdays', 'type': 'INTEGER', 'mode': 'NULLABLE'},
+        {'name': 'previous', 'type': 'INTEGER', 'mode': 'NULLABLE'},
+        {'name': 'poutcome', 'type': 'STRING', 'mode': 'NULLABLE'},
+        {'name': 'emp_var_rate', 'type': 'FLOAT', 'mode': 'NULLABLE'},
+        {'name': 'cons_price_idx', 'type': 'STRING', 'mode': 'NULLABLE'},
+        {'name': 'cons_conf_idx', 'type': 'FLOAT', 'mode': 'NULLABLE'},
+        {'name': 'euribor3m', 'type': 'STRING', 'mode': 'NULLABLE'},
+        {'name': 'nr_employed', 'type': 'INTEGER', 'mode': 'NULLABLE'},
+        {'name': 'y', 'type': 'STRING', 'mode': 'NULLABLE'},
+        {'name': 'sales_id', 'type': 'STRING', 'mode': 'NULLABLE'},
+    ],
+    create_disposition='CREATE_IF_NEEDED',
+    write_disposition='WRITE_TRUNCATE',
+    time_partitioning={
+                        "type": "DAY",
+                        # "expirationMs": string,
+                        "field": "date"
+                        # "requirePartitionFilter": boolean
+                      })
+
+    customer_gcs_to_biqquery= GCSToBigQueryOperator(
+        task_id="customer_gcs_to_bigquery_task",
+        bucket= BUCKET,
+        source_objects=["data/{}.csv".format('customer')],
+        destination_project_dataset_table= "{}.{}.{}".format(PROJECT_ID,BIGQUERY_DATASET,'customer'),
+        source_format='csv',
+        skip_leading_rows=1,
+        field_delimiter=',',
+        schema_fields=[
+        {'name': 'id', 'type': 'INEGER', 'mode': 'NULLABLE'},
+        {'name': 'age', 'type': 'INTEGER', 'mode': 'NULLABLE'},
+        {'name': 'sex', 'type': 'STRING', 'mode': 'NULLABLE'},
+        {'name': 'job_id', 'type': 'INTEGER', 'mode': 'NULLABLE'},
+        {'name': 'marital', 'type': 'STRING', 'mode': 'NULLABLE'},
+        {'name': 'education_id', 'type': 'INTEGER', 'mode': 'NULLABLE'},
+        {'name': 'default', 'type': 'STRING', 'mode': 'NULLABLE'},
+        {'name': 'housing', 'type': 'STRING', 'mode': 'NULLABLE'},
+        {'name': 'loan', 'type': 'STRING', 'mode': 'NULLABLE'},
+        {'name': 'city', 'type': 'STRING', 'mode': 'NULLABLE'},
+    ],
+    create_disposition='CREATE_IF_NEEDED',
+    write_disposition='WRITE_TRUNCATE')
+
+    education_gcs_to_biqquery= GCSToBigQueryOperator(
+        task_id="education_gcs_to_bigquery_task",
+        bucket= BUCKET,
+        source_objects=["data/{}.csv".format('education')],
+        destination_project_dataset_table= "{}.{}.{}".format(PROJECT_ID,BIGQUERY_DATASET,'education'),
+        source_format='csv',
+        skip_leading_rows=1,
+        field_delimiter=',',
+        schema_fields=[
+        {'name': 'education_id', 'type': 'INEGER', 'mode': 'NULLABLE'},
+        {'name': 'education_level', 'type': 'STRING', 'mode': 'NULLABLE'},
+        {'name': 'description', 'type': 'STRING', 'mode': 'NULLABLE'},
+    ],
+    create_disposition='CREATE_IF_NEEDED',
+    write_disposition='WRITE_TRUNCATE')
+
+    job_gcs_to_biqquery= GCSToBigQueryOperator(
+        task_id="job_gcs_to_bigquery_task",
+        bucket= BUCKET,
+        source_objects=["data/{}.csv".format('job')],
+        destination_project_dataset_table= "{}.{}.{}".format(PROJECT_ID,BIGQUERY_DATASET,'job'),
+        source_format='csv',
+        skip_leading_rows=1,
+        field_delimiter=',',
+        schema_fields=[
+        {'name': 'job_id', 'type': 'INEGER', 'mode': 'NULLABLE'},
+        {'name': 'description', 'type': 'STRING', 'mode': 'NULLABLE'},
+        {'name': 'average_annual_salary', 'type': 'INTEGER', 'mode': 'NULLABLE'},
+        {'name': 'average_age', 'type': 'FLOAT', 'mode': 'NULLABLE'},
+    ],
+    create_disposition='CREATE_IF_NEEDED',
+    write_disposition='WRITE_TRUNCATE')
+
+    salesperson_gcs_to_biqquery= GCSToBigQueryOperator(
+        task_id="salesperson_gcs_to_bigquery_task",
+        bucket= BUCKET,
+        source_objects=["data/{}.csv".format('salesperson')],
+        destination_project_dataset_table= "{}.{}.{}".format(PROJECT_ID,BIGQUERY_DATASET,'salesperson'),
+        source_format='csv',
+        skip_leading_rows=1,
+        field_delimiter=',',
+        schema_fields=[
+        {'name': 'id', 'type': 'INEGER', 'mode': 'NULLABLE'},
+        {'name': 'name', 'type': 'STRING', 'mode': 'NULLABLE'},
+        {'name': 'age', 'type': 'INTEGER', 'mode': 'NULLABLE'},
+        {'name': 'city', 'type': 'STRING', 'mode': 'NULLABLE'},
+        {'name': 'sex', 'type': 'INTEGER', 'mode': 'NULLABLE'},
+    ],
+    create_disposition='CREATE_IF_NEEDED',
+    write_disposition='WRITE_TRUNCATE')
+
+    sales_training_gcs_to_biqquery= GCSToBigQueryOperator(
+        task_id="sales_training_gcs_to_bigquery_task",
+        bucket= BUCKET,
+        source_objects=["data/{}.csv".format('sales_training')],
+        destination_project_dataset_table= "{}.{}.{}".format(PROJECT_ID,BIGQUERY_DATASET,'sales_training'),
+        source_format='csv',
+        skip_leading_rows=1,
+        field_delimiter=',',
+        schema_fields=[
+        {'name': 'sales_id', 'type': 'INEGER', 'mode': 'NULLABLE'},
+        {'name': 'training_id', 'type': 'INTEGER', 'mode': 'NULLABLE'},
+        {'name': 'status', 'type': 'STRING', 'mode': 'NULLABLE'},
+        {'name': 'start_date', 'type': 'DATE', 'mode': 'NULLABLE'},
+        {'name': 'end_date', 'type': 'DATE', 'mode': 'NULLABLE'},
+    ],
+    create_disposition='CREATE_IF_NEEDED',
+    write_disposition='WRITE_TRUNCATE')
+
+    training_course_gcs_to_biqquery= GCSToBigQueryOperator(
+        task_id="training_course_gcs_to_bigquery_task",
+        bucket= BUCKET,
+        source_objects=["data/{}.csv".format('training_course')],
+        destination_project_dataset_table= "{}.{}.{}".format(PROJECT_ID,BIGQUERY_DATASET,'training_course'),
+        source_format='csv',
+        skip_leading_rows=1,
+        field_delimiter=',',
+        schema_fields=[
+        {'name': 'id', 'type': 'INEGER', 'mode': 'NULLABLE'},
+        {'name': 'training_course', 'type': 'STRING', 'mode': 'NULLABLE'},
+        {'name': 'description', 'type': 'STRING', 'mode': 'NULLABLE'},
+    ],
+    create_disposition='CREATE_IF_NEEDED',
+    write_disposition='WRITE_TRUNCATE')
     
-    bq_fact_table_external_table = BigQueryCreateExternalTableOperator(
-            task_id = "bq_fact_table_external_table_task",
-            table_resource={
-            "tableReference": {
-                "projectId": PROJECT_ID,
-                "datasetId": BIGQUERY_DATASET,
-                "tableId": "fact_table",
-                },
-            "externalDataConfiguration": {
-                "autodetect": True,
-                "sourceFormat": "CSV",
-                "sourceUris": [f"gs://{BUCKET}/data/fact_table{date}.csv"],
-                },
-            }
-        )
+
+    download_github_data_task >> load_to_gcs_task >> fact_table_gcs_to_bigquery_task\
+    >> customer_gcs_to_biqquery >> education_gcs_to_biqquery >> job_gcs_to_biqquery\
+    >> salesperson_gcs_to_biqquery >> sales_training_gcs_to_biqquery >> training_course_gcs_to_biqquery
     
-    bq_customer_external_table = BigQueryCreateExternalTableOperator(
-            task_id = "bq_customer_external_table_task",
-            table_resource={
-            "tableReference": {
-                "projectId": PROJECT_ID,
-                "datasetId": BIGQUERY_DATASET,
-                "tableId": "customer_table",
-                },
-            "externalDataConfiguration": {
-                "autodetect": True,
-                "sourceFormat": "CSV",
-                "sourceUris": [f"gs://{BUCKET}/data/customer.csv"],
-                },
-            }
-        )
-
-    bq_education_external_table = BigQueryCreateExternalTableOperator(
-            task_id = "bq_education_external_table_task",
-            table_resource={
-            "tableReference": {
-                "projectId": PROJECT_ID,
-                "datasetId": BIGQUERY_DATASET,
-                "tableId": "education_table",
-                },
-            "externalDataConfiguration": {
-                "autodetect": True,
-                "sourceFormat": "CSV",
-                "sourceUris": [f"gs://{BUCKET}/data/education.csv"],
-                },
-            }
-        )
-        
-    bq_job_external_table = BigQueryCreateExternalTableOperator(
-            task_id = "bq_job_external_table_task",
-            table_resource={
-            "tableReference": {
-                "projectId": PROJECT_ID,
-                "datasetId": BIGQUERY_DATASET,
-                "tableId": "job_table",
-                },
-            "externalDataConfiguration": {
-                "autodetect": True,
-                "sourceFormat": "CSV",
-                "sourceUris": [f"gs://{BUCKET}/data/job.csv"],
-                },
-            }
-        )
-    
-    bq_salesperson_external_table = BigQueryCreateExternalTableOperator(
-            task_id = "bq_salesperson_external_table_task",
-            table_resource={
-            "tableReference": {
-                "projectId": PROJECT_ID,
-                "datasetId": BIGQUERY_DATASET,
-                "tableId": "salesperson_table",
-                },
-            "externalDataConfiguration": {
-                "autodetect": True,
-                "sourceFormat": "CSV",
-                "sourceUris": [f"gs://{BUCKET}/data/salesperson.csv"],
-                },
-            }
-        )
-
-    bq_sales_training_external_table = BigQueryCreateExternalTableOperator(
-            task_id = "bq_sales_training_external_table_task",
-            table_resource={
-            "tableReference": {
-                "projectId": PROJECT_ID,
-                "datasetId": BIGQUERY_DATASET,
-                "tableId": "sales_training_table",
-                },
-            "externalDataConfiguration": {
-                "autodetect": True,
-                "sourceFormat": "CSV",
-                "sourceUris": [f"gs://{BUCKET}/data/sales_training.csv"],
-                },
-            }
-        )
-
-    bq_training_course_external_table = BigQueryCreateExternalTableOperator(
-            task_id = "bq_training_course_external_table_task",
-            table_resource={
-            "tableReference": {
-                "projectId": PROJECT_ID,
-                "datasetId": BIGQUERY_DATASET,
-                "tableId": "training_course_table",
-                },
-            "externalDataConfiguration": {
-                "autodetect": True,
-                "sourceFormat": "CSV",
-                "sourceUris": [f"gs://{BUCKET}/data/training_course.csv"],
-                },
-            }
-        )
-
-    download_github_data_task >> format_to_csv_task >> \
-        format_to_parquet_task >> local_to_gcs_task >> [bq_fact_table_external_table,bq_customer_external_table, bq_education_external_table,bq_job_external_table,bq_salesperson_external_table,bq_sales_training_external_table,bq_training_course_external_table]
 
 
-# Overall DAG flow
-# download_dataset_from_github (daily) 
-# >> save_to_GCS 
-# >> load_to_bigquery
-# >> run_dbt
+
 
