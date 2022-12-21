@@ -89,23 +89,121 @@ with DAG(
             },
     ),
 
-    bigquery_external_table_task = BigQueryCreateExternalTableOperator(
-        task_id="bigquery_external_table_task",
-        table_resource={
+    
+    bq_fact_table_external_table = BigQueryCreateExternalTableOperator(
+            task_id = "bq_fact_table_external_table_task",
+            table_resource={
             "tableReference": {
                 "projectId": PROJECT_ID,
                 "datasetId": BIGQUERY_DATASET,
-                "tableId": "external_table",
-            },
+                "tableId": "fact_table",
+                },
             "externalDataConfiguration": {
-                "sourceFormat": "PARQUET",
-                "sourceUris": [f"gs://{BUCKET}/raw/{parquet_file}"],
-            },
-        },
-    )
+                "autodetect": True,
+                "sourceFormat": "CSV",
+                "sourceUris": [f"gs://{BUCKET}/data/fact_table{date}.csv"],
+                },
+            }
+        )
+    
+    bq_customer_external_table = BigQueryCreateExternalTableOperator(
+            task_id = "bq_customer_external_table_task",
+            table_resource={
+            "tableReference": {
+                "projectId": PROJECT_ID,
+                "datasetId": BIGQUERY_DATASET,
+                "tableId": "customer_table",
+                },
+            "externalDataConfiguration": {
+                "autodetect": True,
+                "sourceFormat": "CSV",
+                "sourceUris": [f"gs://{BUCKET}/data/customer.csv"],
+                },
+            }
+        )
+
+    bq_education_external_table = BigQueryCreateExternalTableOperator(
+            task_id = "bq_education_external_table_task",
+            table_resource={
+            "tableReference": {
+                "projectId": PROJECT_ID,
+                "datasetId": BIGQUERY_DATASET,
+                "tableId": "education_table",
+                },
+            "externalDataConfiguration": {
+                "autodetect": True,
+                "sourceFormat": "CSV",
+                "sourceUris": [f"gs://{BUCKET}/data/education.csv"],
+                },
+            }
+        )
+        
+    bq_job_external_table = BigQueryCreateExternalTableOperator(
+            task_id = "bq_job_external_table_task",
+            table_resource={
+            "tableReference": {
+                "projectId": PROJECT_ID,
+                "datasetId": BIGQUERY_DATASET,
+                "tableId": "job_table",
+                },
+            "externalDataConfiguration": {
+                "autodetect": True,
+                "sourceFormat": "CSV",
+                "sourceUris": [f"gs://{BUCKET}/data/job.csv"],
+                },
+            }
+        )
+    
+    bq_salesperson_external_table = BigQueryCreateExternalTableOperator(
+            task_id = "bq_salesperson_external_table_task",
+            table_resource={
+            "tableReference": {
+                "projectId": PROJECT_ID,
+                "datasetId": BIGQUERY_DATASET,
+                "tableId": "salesperson_table",
+                },
+            "externalDataConfiguration": {
+                "autodetect": True,
+                "sourceFormat": "CSV",
+                "sourceUris": [f"gs://{BUCKET}/data/salesperson.csv"],
+                },
+            }
+        )
+
+    bq_sales_training_external_table = BigQueryCreateExternalTableOperator(
+            task_id = "bq_sales_training_external_table_task",
+            table_resource={
+            "tableReference": {
+                "projectId": PROJECT_ID,
+                "datasetId": BIGQUERY_DATASET,
+                "tableId": "sales_training_table",
+                },
+            "externalDataConfiguration": {
+                "autodetect": True,
+                "sourceFormat": "CSV",
+                "sourceUris": [f"gs://{BUCKET}/data/sales_training.csv"],
+                },
+            }
+        )
+
+    bq_training_course_external_table = BigQueryCreateExternalTableOperator(
+            task_id = "bq_training_course_external_table_task",
+            table_resource={
+            "tableReference": {
+                "projectId": PROJECT_ID,
+                "datasetId": BIGQUERY_DATASET,
+                "tableId": "training_course_table",
+                },
+            "externalDataConfiguration": {
+                "autodetect": True,
+                "sourceFormat": "CSV",
+                "sourceUris": [f"gs://{BUCKET}/data/training_course.csv"],
+                },
+            }
+        )
 
     download_github_data_task >> format_to_csv_task >> \
-        format_to_parquet_task >> local_to_gcs_task >> bigquery_external_table_task
+        format_to_parquet_task >> local_to_gcs_task >> [bq_fact_table_external_table,bq_customer_external_table, bq_education_external_table,bq_job_external_table,bq_salesperson_external_table,bq_sales_training_external_table,bq_training_course_external_table]
 
 
 # Overall DAG flow
