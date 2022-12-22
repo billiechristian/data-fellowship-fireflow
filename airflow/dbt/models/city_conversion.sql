@@ -1,18 +1,23 @@
 {{ config(materialized='table') }}
 
 with sales_count as (
-  select s.city, count(*) as total_sales_city
+  select 
+    c.city
+    , count(*) as total_customer_city
   from {{ source('staging', 'Fact_Table') }} f 
-  join {{ source('staging', 'salesperson') }} s
-  on f.sales_id = CAST(s.id AS STRING)
+  join {{ source('staging', 'customer') }} c
+  on f.customer_id = c.id
   group by 1
 )
-select s.city, total_sales_city, count(*) / sc.total_sales_city as sales_conversion
+select 
+  c.city
+  , total_customer_city
+  , count(*) / sc.total_customer_city as sales_conversion
 from {{ source('staging', 'Fact_Table') }} f
-join {{ source('staging', 'salesperson') }} s
-on f.sales_id = CAST(s.id AS STRING)
+join {{ source('staging', 'customer') }} c
+on f.customer_id = c.id
 join sales_count sc
-on sc.city = s.city
+on sc.city = c.city
 where f.y = 'yes'
-group by 1, 2, sc.total_sales_city
+group by 1, 2, sc.total_customer_city
 order by 3 desc, 2 desc

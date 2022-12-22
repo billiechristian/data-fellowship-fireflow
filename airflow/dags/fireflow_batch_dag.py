@@ -234,13 +234,14 @@ with DAG(
     ],
     create_disposition='CREATE_IF_NEEDED',
     write_disposition='WRITE_TRUNCATE')
-    
+
+    dbt_run_task = BashOperator(
+        task_id='dbt_run_task',
+        bash_command='cd /opt/airflow/dbt && dbt run --no-version-check',
+    )
 
     download_github_data_task >> load_to_gcs_task >> fact_table_gcs_to_bigquery_task\
     >> customer_gcs_to_biqquery >> education_gcs_to_biqquery >> job_gcs_to_biqquery\
-    >> salesperson_gcs_to_biqquery >> sales_training_gcs_to_biqquery >> training_course_gcs_to_biqquery
+    >> salesperson_gcs_to_biqquery >> sales_training_gcs_to_biqquery >> training_course_gcs_to_biqquery\
+    >> dbt_run_task
     
-
-
-
-

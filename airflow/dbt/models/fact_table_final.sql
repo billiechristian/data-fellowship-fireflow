@@ -8,7 +8,7 @@
 )}}
 
 
-select f.*, c.*, s.*
+select f.*, c.*, s.id as _sales_id, s.name as sales_name, s.age as sales_age, s.city as sales_city, s.sex as sales_sex
 from {{ source('staging', 'Fact_Table') }} f
 left join {{ source('staging', 'customer') }} c
 on f.customer_id = c.id

@@ -1617,3 +1617,841 @@ NameError: name 'date' is not defined
 [2022-12-21 16:06:57,300] {logging_mixin.py:109} INFO - [2022-12-21 16:06:57,300] {dag.py:2396} INFO - Sync 1 DAGs
 [2022-12-21 16:06:57,316] {logging_mixin.py:109} INFO - [2022-12-21 16:06:57,316] {dag.py:2935} INFO - Setting next_dagrun for fireflow_dag to 2022-12-21T10:00:00+00:00
 [2022-12-21 16:06:57,327] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 1.096 seconds
+[2022-12-21 18:22:04,601] {processor.py:163} INFO - Started process (PID=38) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:22:04,604] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:22:04,619] {logging_mixin.py:109} INFO - [2022-12-21 18:22:04,619] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:22:12,943] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:22:12,963] {logging_mixin.py:109} INFO - [2022-12-21 18:22:12,962] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:22:12,998] {logging_mixin.py:109} INFO - [2022-12-21 18:22:12,998] {dag.py:2935} INFO - Setting next_dagrun for fireflow_dag to 2022-12-21T10:00:00+00:00
+[2022-12-21 18:22:13,052] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 8.481 seconds
+[2022-12-21 18:22:43,725] {processor.py:163} INFO - Started process (PID=64) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:22:43,731] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:22:43,738] {logging_mixin.py:109} INFO - [2022-12-21 18:22:43,737] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:22:47,107] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:22:47,151] {logging_mixin.py:109} INFO - [2022-12-21 18:22:47,150] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:22:47,208] {logging_mixin.py:109} INFO - [2022-12-21 18:22:47,208] {dag.py:2935} INFO - Setting next_dagrun for fireflow_dag to 2022-12-21T10:00:00+00:00
+[2022-12-21 18:22:47,234] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 3.555 seconds
+[2022-12-21 18:23:17,481] {processor.py:163} INFO - Started process (PID=90) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:23:17,483] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:23:17,485] {logging_mixin.py:109} INFO - [2022-12-21 18:23:17,485] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:23:18,256] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:23:18,264] {logging_mixin.py:109} INFO - [2022-12-21 18:23:18,264] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:23:18,277] {logging_mixin.py:109} INFO - [2022-12-21 18:23:18,277] {dag.py:2935} INFO - Setting next_dagrun for fireflow_dag to 2022-12-21T10:00:00+00:00
+[2022-12-21 18:23:18,288] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.815 seconds
+[2022-12-21 18:23:48,412] {processor.py:163} INFO - Started process (PID=126) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:23:48,413] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:23:48,414] {logging_mixin.py:109} INFO - [2022-12-21 18:23:48,414] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:23:49,364] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:23:49,404] {logging_mixin.py:109} INFO - [2022-12-21 18:23:49,404] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:23:49,437] {logging_mixin.py:109} INFO - [2022-12-21 18:23:49,437] {dag.py:2935} INFO - Setting next_dagrun for fireflow_dag to 2022-12-21T10:00:00+00:00
+[2022-12-21 18:23:49,454] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 1.045 seconds
+[2022-12-21 18:24:19,641] {processor.py:163} INFO - Started process (PID=153) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:24:19,643] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:24:19,645] {logging_mixin.py:109} INFO - [2022-12-21 18:24:19,645] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:24:20,989] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:24:21,009] {logging_mixin.py:109} INFO - [2022-12-21 18:24:21,009] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:24:21,035] {logging_mixin.py:109} INFO - [2022-12-21 18:24:21,034] {dag.py:2935} INFO - Setting next_dagrun for fireflow_dag to 2022-12-21T10:00:00+00:00
+[2022-12-21 18:24:21,044] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 1.408 seconds
+[2022-12-21 18:24:51,152] {processor.py:163} INFO - Started process (PID=189) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:24:51,153] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:24:51,154] {logging_mixin.py:109} INFO - [2022-12-21 18:24:51,154] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:24:51,846] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:24:51,858] {logging_mixin.py:109} INFO - [2022-12-21 18:24:51,857] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:24:51,874] {logging_mixin.py:109} INFO - [2022-12-21 18:24:51,874] {dag.py:2935} INFO - Setting next_dagrun for fireflow_dag to 2022-12-21T10:00:00+00:00
+[2022-12-21 18:24:51,881] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.732 seconds
+[2022-12-21 18:25:21,956] {processor.py:163} INFO - Started process (PID=216) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:25:21,958] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:25:21,959] {logging_mixin.py:109} INFO - [2022-12-21 18:25:21,959] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:25:22,529] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:25:22,537] {logging_mixin.py:109} INFO - [2022-12-21 18:25:22,536] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:25:22,548] {logging_mixin.py:109} INFO - [2022-12-21 18:25:22,548] {dag.py:2935} INFO - Setting next_dagrun for fireflow_dag to 2022-12-21T10:00:00+00:00
+[2022-12-21 18:25:22,557] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.604 seconds
+[2022-12-21 18:25:52,683] {processor.py:163} INFO - Started process (PID=253) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:25:52,685] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:25:52,686] {logging_mixin.py:109} INFO - [2022-12-21 18:25:52,685] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:25:53,403] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:25:53,412] {logging_mixin.py:109} INFO - [2022-12-21 18:25:53,412] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:25:53,426] {logging_mixin.py:109} INFO - [2022-12-21 18:25:53,426] {dag.py:2935} INFO - Setting next_dagrun for fireflow_dag to 2022-12-21T10:00:00+00:00
+[2022-12-21 18:25:53,436] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.755 seconds
+[2022-12-21 18:26:23,584] {processor.py:163} INFO - Started process (PID=280) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:26:23,601] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:26:23,602] {logging_mixin.py:109} INFO - [2022-12-21 18:26:23,602] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:26:24,365] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:26:24,373] {logging_mixin.py:109} INFO - [2022-12-21 18:26:24,372] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:26:24,384] {logging_mixin.py:109} INFO - [2022-12-21 18:26:24,384] {dag.py:2935} INFO - Setting next_dagrun for fireflow_dag to 2022-12-21T10:00:00+00:00
+[2022-12-21 18:26:24,393] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.815 seconds
+[2022-12-21 18:26:54,505] {processor.py:163} INFO - Started process (PID=317) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:26:54,506] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:26:54,506] {logging_mixin.py:109} INFO - [2022-12-21 18:26:54,506] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:26:55,036] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:26:55,045] {logging_mixin.py:109} INFO - [2022-12-21 18:26:55,044] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:26:55,059] {logging_mixin.py:109} INFO - [2022-12-21 18:26:55,059] {dag.py:2935} INFO - Setting next_dagrun for fireflow_dag to 2022-12-21T10:00:00+00:00
+[2022-12-21 18:26:55,068] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.566 seconds
+[2022-12-21 18:27:25,251] {processor.py:163} INFO - Started process (PID=353) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:27:25,252] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:27:25,253] {logging_mixin.py:109} INFO - [2022-12-21 18:27:25,253] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:27:26,178] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:27:26,214] {logging_mixin.py:109} INFO - [2022-12-21 18:27:26,214] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:27:26,270] {logging_mixin.py:109} INFO - [2022-12-21 18:27:26,270] {dag.py:2935} INFO - Setting next_dagrun for fireflow_dag to 2022-12-21T10:00:00+00:00
+[2022-12-21 18:27:26,288] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 1.043 seconds
+[2022-12-21 18:27:29,314] {processor.py:163} INFO - Started process (PID=362) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:27:29,316] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:27:29,317] {logging_mixin.py:109} INFO - [2022-12-21 18:27:29,317] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:27:29,428] {logging_mixin.py:109} INFO - [2022-12-21 18:27:29,426] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/fireflow_batch_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/fireflow_batch_dag.py", line 251
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+[2022-12-21 18:27:29,450] {processor.py:690} INFO - Deactivated 1 DAGs which are no longer present in /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:27:29,450] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:27:29,470] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.160 seconds
+[2022-12-21 18:27:59,615] {processor.py:163} INFO - Started process (PID=381) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:27:59,617] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:27:59,618] {logging_mixin.py:109} INFO - [2022-12-21 18:27:59,618] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:27:59,637] {logging_mixin.py:109} INFO - [2022-12-21 18:27:59,636] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/fireflow_batch_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/fireflow_batch_dag.py", line 251
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+[2022-12-21 18:27:59,651] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:27:59,689] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.078 seconds
+[2022-12-21 18:28:29,737] {processor.py:163} INFO - Started process (PID=410) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:28:29,738] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:28:29,739] {logging_mixin.py:109} INFO - [2022-12-21 18:28:29,739] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:28:29,758] {logging_mixin.py:109} INFO - [2022-12-21 18:28:29,757] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/fireflow_batch_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/fireflow_batch_dag.py", line 251
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+[2022-12-21 18:28:29,770] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:28:29,777] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.043 seconds
+[2022-12-21 18:28:59,949] {processor.py:163} INFO - Started process (PID=430) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:28:59,951] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:28:59,952] {logging_mixin.py:109} INFO - [2022-12-21 18:28:59,952] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:28:59,975] {logging_mixin.py:109} INFO - [2022-12-21 18:28:59,974] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/fireflow_batch_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/fireflow_batch_dag.py", line 251
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+[2022-12-21 18:29:00,019] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:29:00,048] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.103 seconds
+[2022-12-21 18:29:30,079] {processor.py:163} INFO - Started process (PID=457) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:29:30,082] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:29:30,082] {logging_mixin.py:109} INFO - [2022-12-21 18:29:30,082] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:29:30,098] {logging_mixin.py:109} INFO - [2022-12-21 18:29:30,096] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/fireflow_batch_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/fireflow_batch_dag.py", line 251
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+[2022-12-21 18:29:30,111] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:29:30,118] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.042 seconds
+[2022-12-21 18:30:00,226] {processor.py:163} INFO - Started process (PID=476) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:30:00,228] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:30:00,229] {logging_mixin.py:109} INFO - [2022-12-21 18:30:00,229] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:30:00,250] {logging_mixin.py:109} INFO - [2022-12-21 18:30:00,250] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/fireflow_batch_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/fireflow_batch_dag.py", line 251
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+[2022-12-21 18:30:00,263] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:30:00,271] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.048 seconds
+[2022-12-21 18:30:30,433] {processor.py:163} INFO - Started process (PID=505) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:30:30,435] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:30:30,436] {logging_mixin.py:109} INFO - [2022-12-21 18:30:30,436] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:30:30,457] {logging_mixin.py:109} INFO - [2022-12-21 18:30:30,456] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/fireflow_batch_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/fireflow_batch_dag.py", line 251
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+[2022-12-21 18:30:30,474] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:30:30,485] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.056 seconds
+[2022-12-21 18:31:00,563] {processor.py:163} INFO - Started process (PID=525) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:31:00,567] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:31:00,568] {logging_mixin.py:109} INFO - [2022-12-21 18:31:00,568] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:31:00,587] {logging_mixin.py:109} INFO - [2022-12-21 18:31:00,587] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/fireflow_batch_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/fireflow_batch_dag.py", line 251
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+[2022-12-21 18:31:00,603] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:31:00,613] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.052 seconds
+[2022-12-21 18:31:30,819] {processor.py:163} INFO - Started process (PID=553) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:31:30,825] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:31:30,827] {logging_mixin.py:109} INFO - [2022-12-21 18:31:30,827] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:31:30,852] {logging_mixin.py:109} INFO - [2022-12-21 18:31:30,849] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/fireflow_batch_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/fireflow_batch_dag.py", line 251
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+[2022-12-21 18:31:30,889] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:31:30,904] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.095 seconds
+[2022-12-21 18:32:00,946] {processor.py:163} INFO - Started process (PID=572) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:32:00,948] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:32:00,949] {logging_mixin.py:109} INFO - [2022-12-21 18:32:00,949] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:32:00,973] {logging_mixin.py:109} INFO - [2022-12-21 18:32:00,971] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/fireflow_batch_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/fireflow_batch_dag.py", line 251
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+[2022-12-21 18:32:00,988] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:32:00,999] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.055 seconds
+[2022-12-21 18:32:31,245] {processor.py:163} INFO - Started process (PID=600) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:32:31,247] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:32:31,248] {logging_mixin.py:109} INFO - [2022-12-21 18:32:31,248] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:32:31,270] {logging_mixin.py:109} INFO - [2022-12-21 18:32:31,268] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/fireflow_batch_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/fireflow_batch_dag.py", line 251
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+[2022-12-21 18:32:31,286] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:32:31,296] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.053 seconds
+[2022-12-21 18:33:01,386] {processor.py:163} INFO - Started process (PID=619) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:33:01,387] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:33:01,388] {logging_mixin.py:109} INFO - [2022-12-21 18:33:01,388] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:33:01,407] {logging_mixin.py:109} INFO - [2022-12-21 18:33:01,406] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/fireflow_batch_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/fireflow_batch_dag.py", line 251
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+[2022-12-21 18:33:01,421] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:33:01,429] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.046 seconds
+[2022-12-21 18:33:31,533] {processor.py:163} INFO - Started process (PID=647) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:33:31,535] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:33:31,535] {logging_mixin.py:109} INFO - [2022-12-21 18:33:31,535] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:33:31,554] {logging_mixin.py:109} INFO - [2022-12-21 18:33:31,553] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/fireflow_batch_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/fireflow_batch_dag.py", line 251
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+[2022-12-21 18:33:31,571] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:33:31,582] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.053 seconds
+[2022-12-21 18:34:01,695] {processor.py:163} INFO - Started process (PID=667) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:34:01,698] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:34:01,700] {logging_mixin.py:109} INFO - [2022-12-21 18:34:01,699] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:34:01,727] {logging_mixin.py:109} INFO - [2022-12-21 18:34:01,727] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/fireflow_batch_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/fireflow_batch_dag.py", line 251
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+[2022-12-21 18:34:01,744] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:34:01,752] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.060 seconds
+[2022-12-21 18:34:31,828] {processor.py:163} INFO - Started process (PID=696) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:34:31,829] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:34:31,830] {logging_mixin.py:109} INFO - [2022-12-21 18:34:31,830] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:34:31,849] {logging_mixin.py:109} INFO - [2022-12-21 18:34:31,848] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/fireflow_batch_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/fireflow_batch_dag.py", line 251
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+[2022-12-21 18:34:31,863] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:34:31,873] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.048 seconds
+[2022-12-21 18:35:01,988] {processor.py:163} INFO - Started process (PID=716) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:35:01,992] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:35:01,993] {logging_mixin.py:109} INFO - [2022-12-21 18:35:01,993] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:35:02,014] {logging_mixin.py:109} INFO - [2022-12-21 18:35:02,011] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/fireflow_batch_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/fireflow_batch_dag.py", line 251
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+[2022-12-21 18:35:02,036] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:35:02,045] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.060 seconds
+[2022-12-21 18:35:32,138] {processor.py:163} INFO - Started process (PID=744) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:35:32,140] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:35:32,141] {logging_mixin.py:109} INFO - [2022-12-21 18:35:32,141] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:35:32,161] {logging_mixin.py:109} INFO - [2022-12-21 18:35:32,160] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/fireflow_batch_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/fireflow_batch_dag.py", line 251
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+[2022-12-21 18:35:32,177] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:35:32,186] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.052 seconds
+[2022-12-21 18:36:02,313] {processor.py:163} INFO - Started process (PID=772) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:36:02,314] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:36:02,315] {logging_mixin.py:109} INFO - [2022-12-21 18:36:02,315] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:36:02,332] {logging_mixin.py:109} INFO - [2022-12-21 18:36:02,332] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/fireflow_batch_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/fireflow_batch_dag.py", line 251
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+[2022-12-21 18:36:02,346] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:36:02,356] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.046 seconds
+[2022-12-21 18:36:32,429] {processor.py:163} INFO - Started process (PID=791) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:36:32,432] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:36:32,437] {logging_mixin.py:109} INFO - [2022-12-21 18:36:32,436] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:36:32,462] {logging_mixin.py:109} INFO - [2022-12-21 18:36:32,461] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/fireflow_batch_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/fireflow_batch_dag.py", line 251
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+[2022-12-21 18:36:32,492] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:36:32,510] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.086 seconds
+[2022-12-21 18:37:02,590] {processor.py:163} INFO - Started process (PID=817) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:37:02,594] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:37:02,596] {logging_mixin.py:109} INFO - [2022-12-21 18:37:02,595] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:37:02,622] {logging_mixin.py:109} INFO - [2022-12-21 18:37:02,619] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/fireflow_batch_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/fireflow_batch_dag.py", line 251
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+[2022-12-21 18:37:02,642] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:37:02,650] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.063 seconds
+[2022-12-21 18:37:32,811] {processor.py:163} INFO - Started process (PID=838) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:37:32,818] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:37:32,819] {logging_mixin.py:109} INFO - [2022-12-21 18:37:32,819] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:37:32,843] {logging_mixin.py:109} INFO - [2022-12-21 18:37:32,842] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/fireflow_batch_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/fireflow_batch_dag.py", line 251
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+[2022-12-21 18:37:32,869] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:37:32,886] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.077 seconds
+[2022-12-21 18:38:03,102] {processor.py:163} INFO - Started process (PID=857) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:38:03,177] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:38:03,180] {logging_mixin.py:109} INFO - [2022-12-21 18:38:03,179] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:38:03,247] {logging_mixin.py:109} INFO - [2022-12-21 18:38:03,245] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/fireflow_batch_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/fireflow_batch_dag.py", line 251
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+[2022-12-21 18:38:03,308] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:38:03,331] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.238 seconds
+[2022-12-21 18:38:34,046] {processor.py:163} INFO - Started process (PID=885) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:38:34,051] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:38:34,054] {logging_mixin.py:109} INFO - [2022-12-21 18:38:34,054] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:38:34,088] {logging_mixin.py:109} INFO - [2022-12-21 18:38:34,085] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/fireflow_batch_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/fireflow_batch_dag.py", line 251
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+[2022-12-21 18:38:34,153] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:38:34,174] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.148 seconds
+[2022-12-21 18:39:04,441] {processor.py:163} INFO - Started process (PID=904) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:39:04,445] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:39:04,449] {logging_mixin.py:109} INFO - [2022-12-21 18:39:04,449] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:39:04,542] {logging_mixin.py:109} INFO - [2022-12-21 18:39:04,537] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/fireflow_batch_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/fireflow_batch_dag.py", line 251
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+[2022-12-21 18:39:04,586] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:39:04,609] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.179 seconds
+[2022-12-21 18:39:34,777] {processor.py:163} INFO - Started process (PID=932) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:39:34,779] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:39:34,780] {logging_mixin.py:109} INFO - [2022-12-21 18:39:34,780] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:39:34,801] {logging_mixin.py:109} INFO - [2022-12-21 18:39:34,800] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/fireflow_batch_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/fireflow_batch_dag.py", line 251
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+[2022-12-21 18:39:34,818] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:39:34,825] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.051 seconds
+[2022-12-21 18:39:47,959] {processor.py:163} INFO - Started process (PID=942) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:39:47,962] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:39:47,963] {logging_mixin.py:109} INFO - [2022-12-21 18:39:47,963] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:39:51,669] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:39:52,329] {logging_mixin.py:109} INFO - [2022-12-21 18:39:52,329] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:39:52,354] {logging_mixin.py:109} INFO - [2022-12-21 18:39:52,354] {dag.py:2935} INFO - Setting next_dagrun for fireflow_dag to 2022-12-21T10:00:00+00:00
+[2022-12-21 18:39:52,379] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 4.423 seconds
+[2022-12-21 18:40:22,608] {processor.py:163} INFO - Started process (PID=978) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:40:22,611] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:40:22,613] {logging_mixin.py:109} INFO - [2022-12-21 18:40:22,613] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:40:23,405] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:40:23,412] {logging_mixin.py:109} INFO - [2022-12-21 18:40:23,412] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:40:23,424] {logging_mixin.py:109} INFO - [2022-12-21 18:40:23,424] {dag.py:2935} INFO - Setting next_dagrun for fireflow_dag to 2022-12-21T10:00:00+00:00
+[2022-12-21 18:40:23,433] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.836 seconds
+[2022-12-21 18:40:56,537] {processor.py:163} INFO - Started process (PID=1005) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:40:56,782] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:40:56,978] {logging_mixin.py:109} INFO - [2022-12-21 18:40:56,978] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:41:05,084] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:41:05,107] {logging_mixin.py:109} INFO - [2022-12-21 18:41:05,107] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:41:05,130] {logging_mixin.py:109} INFO - [2022-12-21 18:41:05,130] {dag.py:2935} INFO - Setting next_dagrun for fireflow_dag to 2022-12-21T10:00:00+00:00
+[2022-12-21 18:41:05,176] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 9.528 seconds
+[2022-12-21 18:41:31,327] {processor.py:163} INFO - Started process (PID=1033) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:41:31,350] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:41:31,352] {logging_mixin.py:109} INFO - [2022-12-21 18:41:31,352] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:41:52,057] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:41:53,522] {logging_mixin.py:109} INFO - [2022-12-21 18:41:53,521] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:41:53,568] {logging_mixin.py:109} INFO - [2022-12-21 18:41:53,566] {dag.py:2935} INFO - Setting next_dagrun for fireflow_dag to 2022-12-21T10:00:00+00:00
+[2022-12-21 18:41:53,616] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 22.330 seconds
+[2022-12-21 18:42:24,278] {processor.py:163} INFO - Started process (PID=1070) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:42:24,281] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:42:24,283] {logging_mixin.py:109} INFO - [2022-12-21 18:42:24,283] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:42:27,277] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:42:27,285] {logging_mixin.py:109} INFO - [2022-12-21 18:42:27,285] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:42:27,300] {logging_mixin.py:109} INFO - [2022-12-21 18:42:27,300] {dag.py:2935} INFO - Setting next_dagrun for fireflow_dag to 2022-12-21T10:00:00+00:00
+[2022-12-21 18:42:27,311] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 3.046 seconds
+[2022-12-21 18:42:57,549] {processor.py:163} INFO - Started process (PID=1106) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:42:57,552] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:42:57,554] {logging_mixin.py:109} INFO - [2022-12-21 18:42:57,554] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:42:58,446] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:42:58,456] {logging_mixin.py:109} INFO - [2022-12-21 18:42:58,456] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:42:58,469] {logging_mixin.py:109} INFO - [2022-12-21 18:42:58,469] {dag.py:2935} INFO - Setting next_dagrun for fireflow_dag to 2022-12-21T10:00:00+00:00
+[2022-12-21 18:42:58,482] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.941 seconds
+[2022-12-21 18:43:28,666] {processor.py:163} INFO - Started process (PID=1142) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:43:28,668] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:43:28,669] {logging_mixin.py:109} INFO - [2022-12-21 18:43:28,669] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:43:29,201] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:43:29,210] {logging_mixin.py:109} INFO - [2022-12-21 18:43:29,210] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:43:29,222] {logging_mixin.py:109} INFO - [2022-12-21 18:43:29,222] {dag.py:2935} INFO - Setting next_dagrun for fireflow_dag to 2022-12-21T10:00:00+00:00
+[2022-12-21 18:43:29,232] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.568 seconds
+[2022-12-21 18:43:59,395] {processor.py:163} INFO - Started process (PID=1169) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:43:59,396] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:43:59,398] {logging_mixin.py:109} INFO - [2022-12-21 18:43:59,398] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:44:00,031] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:44:00,040] {logging_mixin.py:109} INFO - [2022-12-21 18:44:00,039] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:44:00,052] {logging_mixin.py:109} INFO - [2022-12-21 18:44:00,052] {dag.py:2935} INFO - Setting next_dagrun for fireflow_dag to 2022-12-21T10:00:00+00:00
+[2022-12-21 18:44:00,062] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.670 seconds
+[2022-12-21 18:44:30,190] {processor.py:163} INFO - Started process (PID=1206) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:44:30,192] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:44:30,192] {logging_mixin.py:109} INFO - [2022-12-21 18:44:30,192] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:44:30,825] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:44:30,838] {logging_mixin.py:109} INFO - [2022-12-21 18:44:30,838] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:44:30,860] {logging_mixin.py:109} INFO - [2022-12-21 18:44:30,860] {dag.py:2935} INFO - Setting next_dagrun for fireflow_dag to 2022-12-21T10:00:00+00:00
+[2022-12-21 18:44:30,869] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.681 seconds
+[2022-12-21 18:45:01,027] {processor.py:163} INFO - Started process (PID=1233) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:45:01,030] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:45:01,033] {logging_mixin.py:109} INFO - [2022-12-21 18:45:01,033] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:45:02,036] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:45:02,046] {logging_mixin.py:109} INFO - [2022-12-21 18:45:02,046] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:45:02,059] {logging_mixin.py:109} INFO - [2022-12-21 18:45:02,059] {dag.py:2935} INFO - Setting next_dagrun for fireflow_dag to 2022-12-21T10:00:00+00:00
+[2022-12-21 18:45:02,069] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 1.051 seconds
+[2022-12-21 18:45:32,145] {processor.py:163} INFO - Started process (PID=1269) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:45:32,147] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:45:32,148] {logging_mixin.py:109} INFO - [2022-12-21 18:45:32,148] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:45:32,747] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:45:32,761] {logging_mixin.py:109} INFO - [2022-12-21 18:45:32,760] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:45:32,780] {logging_mixin.py:109} INFO - [2022-12-21 18:45:32,780] {dag.py:2935} INFO - Setting next_dagrun for fireflow_dag to 2022-12-21T10:00:00+00:00
+[2022-12-21 18:45:32,789] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.648 seconds
+[2022-12-21 18:46:02,988] {processor.py:163} INFO - Started process (PID=1305) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:46:02,990] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:46:02,991] {logging_mixin.py:109} INFO - [2022-12-21 18:46:02,991] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:46:03,738] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:46:03,748] {logging_mixin.py:109} INFO - [2022-12-21 18:46:03,748] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:46:03,761] {logging_mixin.py:109} INFO - [2022-12-21 18:46:03,761] {dag.py:2935} INFO - Setting next_dagrun for fireflow_dag to 2022-12-21T10:00:00+00:00
+[2022-12-21 18:46:03,770] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.785 seconds
+[2022-12-21 18:46:33,986] {processor.py:163} INFO - Started process (PID=1332) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:46:33,988] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:46:33,989] {logging_mixin.py:109} INFO - [2022-12-21 18:46:33,989] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:46:34,621] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:46:34,628] {logging_mixin.py:109} INFO - [2022-12-21 18:46:34,628] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:46:34,639] {logging_mixin.py:109} INFO - [2022-12-21 18:46:34,639] {dag.py:2935} INFO - Setting next_dagrun for fireflow_dag to 2022-12-21T10:00:00+00:00
+[2022-12-21 18:46:34,647] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.664 seconds
+[2022-12-21 18:47:04,762] {processor.py:163} INFO - Started process (PID=1368) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:47:04,764] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:47:04,765] {logging_mixin.py:109} INFO - [2022-12-21 18:47:04,765] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:47:05,658] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:47:05,667] {logging_mixin.py:109} INFO - [2022-12-21 18:47:05,667] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:47:05,678] {logging_mixin.py:109} INFO - [2022-12-21 18:47:05,678] {dag.py:2935} INFO - Setting next_dagrun for fireflow_dag to 2022-12-21T10:00:00+00:00
+[2022-12-21 18:47:05,688] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.929 seconds
+[2022-12-21 18:47:35,790] {processor.py:163} INFO - Started process (PID=1395) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:47:35,791] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:47:35,792] {logging_mixin.py:109} INFO - [2022-12-21 18:47:35,792] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:47:36,571] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:47:36,580] {logging_mixin.py:109} INFO - [2022-12-21 18:47:36,580] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:47:36,592] {logging_mixin.py:109} INFO - [2022-12-21 18:47:36,592] {dag.py:2935} INFO - Setting next_dagrun for fireflow_dag to 2022-12-21T10:00:00+00:00
+[2022-12-21 18:47:36,601] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.813 seconds
+[2022-12-21 18:48:06,746] {processor.py:163} INFO - Started process (PID=1431) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:48:06,747] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:48:06,748] {logging_mixin.py:109} INFO - [2022-12-21 18:48:06,748] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:48:07,292] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:48:07,300] {logging_mixin.py:109} INFO - [2022-12-21 18:48:07,299] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:48:07,310] {logging_mixin.py:109} INFO - [2022-12-21 18:48:07,310] {dag.py:2935} INFO - Setting next_dagrun for fireflow_dag to 2022-12-21T10:00:00+00:00
+[2022-12-21 18:48:07,321] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.578 seconds
+[2022-12-21 18:48:37,446] {processor.py:163} INFO - Started process (PID=1467) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:48:37,448] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:48:37,448] {logging_mixin.py:109} INFO - [2022-12-21 18:48:37,448] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:48:38,085] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:48:38,093] {logging_mixin.py:109} INFO - [2022-12-21 18:48:38,092] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:48:38,104] {logging_mixin.py:109} INFO - [2022-12-21 18:48:38,104] {dag.py:2935} INFO - Setting next_dagrun for fireflow_dag to 2022-12-21T10:00:00+00:00
+[2022-12-21 18:48:38,112] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.669 seconds
+[2022-12-21 18:49:08,225] {processor.py:163} INFO - Started process (PID=1494) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:49:08,226] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:49:08,227] {logging_mixin.py:109} INFO - [2022-12-21 18:49:08,227] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:49:08,783] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:49:08,790] {logging_mixin.py:109} INFO - [2022-12-21 18:49:08,790] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:49:08,801] {logging_mixin.py:109} INFO - [2022-12-21 18:49:08,801] {dag.py:2935} INFO - Setting next_dagrun for fireflow_dag to 2022-12-21T10:00:00+00:00
+[2022-12-21 18:49:08,811] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.588 seconds
+[2022-12-21 18:49:38,989] {processor.py:163} INFO - Started process (PID=1531) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:49:38,990] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:49:38,991] {logging_mixin.py:109} INFO - [2022-12-21 18:49:38,991] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:49:39,778] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:49:39,787] {logging_mixin.py:109} INFO - [2022-12-21 18:49:39,787] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:49:39,800] {logging_mixin.py:109} INFO - [2022-12-21 18:49:39,800] {dag.py:2935} INFO - Setting next_dagrun for fireflow_dag to 2022-12-21T10:00:00+00:00
+[2022-12-21 18:49:39,810] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.825 seconds
+[2022-12-21 18:50:09,924] {processor.py:163} INFO - Started process (PID=1558) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:50:09,926] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:50:09,926] {logging_mixin.py:109} INFO - [2022-12-21 18:50:09,926] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:50:10,671] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:50:10,679] {logging_mixin.py:109} INFO - [2022-12-21 18:50:10,678] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:50:10,690] {logging_mixin.py:109} INFO - [2022-12-21 18:50:10,690] {dag.py:2935} INFO - Setting next_dagrun for fireflow_dag to 2022-12-21T10:00:00+00:00
+[2022-12-21 18:50:10,699] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.778 seconds
+[2022-12-21 18:50:40,810] {processor.py:163} INFO - Started process (PID=1594) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:50:40,812] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:50:40,813] {logging_mixin.py:109} INFO - [2022-12-21 18:50:40,812] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:50:41,475] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:50:41,488] {logging_mixin.py:109} INFO - [2022-12-21 18:50:41,488] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:50:41,506] {logging_mixin.py:109} INFO - [2022-12-21 18:50:41,506] {dag.py:2935} INFO - Setting next_dagrun for fireflow_dag to 2022-12-21T10:00:00+00:00
+[2022-12-21 18:50:41,516] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.709 seconds
+[2022-12-21 18:51:11,646] {processor.py:163} INFO - Started process (PID=1621) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:51:11,648] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:51:11,649] {logging_mixin.py:109} INFO - [2022-12-21 18:51:11,648] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:51:12,426] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:51:12,440] {logging_mixin.py:109} INFO - [2022-12-21 18:51:12,439] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:51:12,463] {logging_mixin.py:109} INFO - [2022-12-21 18:51:12,463] {dag.py:2935} INFO - Setting next_dagrun for fireflow_dag to 2022-12-21T10:00:00+00:00
+[2022-12-21 18:51:12,479] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.836 seconds
+[2022-12-21 18:51:42,594] {processor.py:163} INFO - Started process (PID=1657) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:51:42,596] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:51:42,596] {logging_mixin.py:109} INFO - [2022-12-21 18:51:42,596] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:51:43,384] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:51:43,394] {logging_mixin.py:109} INFO - [2022-12-21 18:51:43,394] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:51:43,407] {logging_mixin.py:109} INFO - [2022-12-21 18:51:43,407] {dag.py:2935} INFO - Setting next_dagrun for fireflow_dag to 2022-12-21T10:00:00+00:00
+[2022-12-21 18:51:43,418] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.826 seconds
+[2022-12-21 18:52:12,265] {processor.py:163} INFO - Started process (PID=1693) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:52:12,268] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:52:12,269] {logging_mixin.py:109} INFO - [2022-12-21 18:52:12,269] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:52:13,254] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:52:13,271] {logging_mixin.py:109} INFO - [2022-12-21 18:52:13,270] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:52:13,296] {logging_mixin.py:109} INFO - [2022-12-21 18:52:13,295] {dag.py:2935} INFO - Setting next_dagrun for fireflow_dag to 2022-12-21T10:00:00+00:00
+[2022-12-21 18:52:13,317] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 1.056 seconds
+[2022-12-21 18:52:43,409] {processor.py:163} INFO - Started process (PID=1720) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:52:43,411] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:52:43,411] {logging_mixin.py:109} INFO - [2022-12-21 18:52:43,411] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:52:43,956] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:52:43,965] {logging_mixin.py:109} INFO - [2022-12-21 18:52:43,965] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:52:43,978] {logging_mixin.py:109} INFO - [2022-12-21 18:52:43,978] {dag.py:2935} INFO - Setting next_dagrun for fireflow_dag to 2022-12-21T10:00:00+00:00
+[2022-12-21 18:52:43,988] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.581 seconds
+[2022-12-21 18:53:14,101] {processor.py:163} INFO - Started process (PID=1756) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:53:14,103] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:53:14,104] {logging_mixin.py:109} INFO - [2022-12-21 18:53:14,104] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:53:14,752] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:53:14,760] {logging_mixin.py:109} INFO - [2022-12-21 18:53:14,760] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:53:14,777] {logging_mixin.py:109} INFO - [2022-12-21 18:53:14,777] {dag.py:2935} INFO - Setting next_dagrun for fireflow_dag to 2022-12-21T10:00:00+00:00
+[2022-12-21 18:53:14,787] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.689 seconds
+[2022-12-21 18:53:44,910] {processor.py:163} INFO - Started process (PID=1783) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:53:44,911] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:53:44,912] {logging_mixin.py:109} INFO - [2022-12-21 18:53:44,912] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:53:45,529] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:53:45,537] {logging_mixin.py:109} INFO - [2022-12-21 18:53:45,537] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:53:45,548] {logging_mixin.py:109} INFO - [2022-12-21 18:53:45,548] {dag.py:2935} INFO - Setting next_dagrun for fireflow_dag to 2022-12-21T10:00:00+00:00
+[2022-12-21 18:53:45,555] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.648 seconds
+[2022-12-21 18:54:16,709] {processor.py:163} INFO - Started process (PID=1820) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:54:16,719] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:54:16,727] {logging_mixin.py:109} INFO - [2022-12-21 18:54:16,727] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:54:19,699] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:54:19,708] {logging_mixin.py:109} INFO - [2022-12-21 18:54:19,708] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:54:19,724] {logging_mixin.py:109} INFO - [2022-12-21 18:54:19,724] {dag.py:2935} INFO - Setting next_dagrun for fireflow_dag to 2022-12-21T10:00:00+00:00
+[2022-12-21 18:54:19,739] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 3.076 seconds
+[2022-12-21 18:54:49,972] {processor.py:163} INFO - Started process (PID=1848) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:54:49,973] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:54:49,974] {logging_mixin.py:109} INFO - [2022-12-21 18:54:49,974] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:54:50,933] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:54:50,944] {logging_mixin.py:109} INFO - [2022-12-21 18:54:50,943] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:54:50,958] {logging_mixin.py:109} INFO - [2022-12-21 18:54:50,958] {dag.py:2935} INFO - Setting next_dagrun for fireflow_dag to 2022-12-21T10:00:00+00:00
+[2022-12-21 18:54:51,008] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 1.039 seconds
+[2022-12-21 18:55:21,987] {processor.py:163} INFO - Started process (PID=1884) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:55:21,999] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:55:22,002] {logging_mixin.py:109} INFO - [2022-12-21 18:55:22,002] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:55:24,716] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:55:24,736] {logging_mixin.py:109} INFO - [2022-12-21 18:55:24,735] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:55:24,820] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 2.846 seconds
+[2022-12-21 18:55:55,132] {processor.py:163} INFO - Started process (PID=1911) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:55:55,134] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:55:55,136] {logging_mixin.py:109} INFO - [2022-12-21 18:55:55,136] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:55:58,113] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:55:58,122] {logging_mixin.py:109} INFO - [2022-12-21 18:55:58,122] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:55:58,153] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 3.025 seconds
+[2022-12-21 18:56:28,234] {processor.py:163} INFO - Started process (PID=1947) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:56:28,235] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:56:28,236] {logging_mixin.py:109} INFO - [2022-12-21 18:56:28,236] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:56:28,855] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:56:28,865] {logging_mixin.py:109} INFO - [2022-12-21 18:56:28,865] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:56:28,888] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.658 seconds
+[2022-12-21 18:56:59,023] {processor.py:163} INFO - Started process (PID=1976) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:56:59,025] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:56:59,025] {logging_mixin.py:109} INFO - [2022-12-21 18:56:59,025] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:56:59,518] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:56:59,526] {logging_mixin.py:109} INFO - [2022-12-21 18:56:59,526] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:56:59,548] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.527 seconds
+[2022-12-21 18:57:29,600] {processor.py:163} INFO - Started process (PID=2011) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:57:29,602] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:57:29,602] {logging_mixin.py:109} INFO - [2022-12-21 18:57:29,602] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:57:30,192] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:57:30,200] {logging_mixin.py:109} INFO - [2022-12-21 18:57:30,200] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:57:30,219] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.622 seconds
+[2022-12-21 18:58:00,375] {processor.py:163} INFO - Started process (PID=2038) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:58:00,377] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:58:00,378] {logging_mixin.py:109} INFO - [2022-12-21 18:58:00,378] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:58:01,122] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:58:01,134] {logging_mixin.py:109} INFO - [2022-12-21 18:58:01,133] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:58:01,379] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 1.007 seconds
+[2022-12-21 18:58:31,590] {processor.py:163} INFO - Started process (PID=2074) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:58:31,593] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:58:31,597] {logging_mixin.py:109} INFO - [2022-12-21 18:58:31,596] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:58:33,355] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:58:33,368] {logging_mixin.py:109} INFO - [2022-12-21 18:58:33,368] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:58:33,402] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 1.822 seconds
+[2022-12-21 18:59:04,104] {processor.py:163} INFO - Started process (PID=2109) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:59:04,112] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:59:04,123] {logging_mixin.py:109} INFO - [2022-12-21 18:59:04,123] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:59:06,535] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:59:06,671] {logging_mixin.py:109} INFO - [2022-12-21 18:59:06,665] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:59:06,838] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 2.794 seconds
+[2022-12-21 18:59:42,817] {processor.py:163} INFO - Started process (PID=2138) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:59:42,903] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 18:59:42,962] {logging_mixin.py:109} INFO - [2022-12-21 18:59:42,961] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:59:54,635] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 18:59:54,646] {logging_mixin.py:109} INFO - [2022-12-21 18:59:54,646] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 18:59:54,678] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 15.264 seconds
+[2022-12-21 19:00:26,600] {processor.py:163} INFO - Started process (PID=2174) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 19:00:26,713] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 19:00:26,716] {logging_mixin.py:109} INFO - [2022-12-21 19:00:26,716] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 19:00:32,998] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 19:00:33,008] {logging_mixin.py:109} INFO - [2022-12-21 19:00:33,008] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 19:00:33,037] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 7.320 seconds
+[2022-12-21 19:01:04,255] {processor.py:163} INFO - Started process (PID=2210) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 19:01:04,269] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 19:01:04,319] {logging_mixin.py:109} INFO - [2022-12-21 19:01:04,319] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 19:01:07,834] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 19:01:07,843] {logging_mixin.py:109} INFO - [2022-12-21 19:01:07,843] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 19:01:07,870] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 3.640 seconds
+[2022-12-21 19:01:38,070] {processor.py:163} INFO - Started process (PID=2237) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 19:01:38,072] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 19:01:38,074] {logging_mixin.py:109} INFO - [2022-12-21 19:01:38,073] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 19:01:38,858] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 19:01:38,866] {logging_mixin.py:109} INFO - [2022-12-21 19:01:38,866] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 19:01:38,887] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.823 seconds
+[2022-12-21 19:02:08,992] {processor.py:163} INFO - Started process (PID=2274) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 19:02:09,003] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 19:02:09,005] {logging_mixin.py:109} INFO - [2022-12-21 19:02:09,004] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 19:02:38,228] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 19:02:40,780] {logging_mixin.py:109} INFO - [2022-12-21 19:02:40,780] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 19:02:41,840] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 32.870 seconds
+[2022-12-21 19:03:13,215] {processor.py:163} INFO - Started process (PID=2301) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 19:03:13,241] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 19:03:13,258] {logging_mixin.py:109} INFO - [2022-12-21 19:03:13,258] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 19:03:16,139] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 19:03:16,149] {logging_mixin.py:109} INFO - [2022-12-21 19:03:16,148] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 19:03:16,170] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 3.114 seconds
+[2022-12-21 19:03:46,968] {processor.py:163} INFO - Started process (PID=2329) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 19:03:46,970] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 19:03:46,971] {logging_mixin.py:109} INFO - [2022-12-21 19:03:46,970] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 19:03:47,466] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 19:03:47,473] {logging_mixin.py:109} INFO - [2022-12-21 19:03:47,473] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 19:03:47,492] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.528 seconds
+[2022-12-21 19:04:17,652] {processor.py:163} INFO - Started process (PID=2365) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 19:04:17,654] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 19:04:17,655] {logging_mixin.py:109} INFO - [2022-12-21 19:04:17,655] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 19:04:18,400] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 19:04:18,407] {logging_mixin.py:109} INFO - [2022-12-21 19:04:18,407] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 19:04:18,425] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.778 seconds
+[2022-12-21 19:04:48,543] {processor.py:163} INFO - Started process (PID=2392) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 19:04:48,545] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 19:04:48,545] {logging_mixin.py:109} INFO - [2022-12-21 19:04:48,545] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 19:04:49,037] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 19:04:49,045] {logging_mixin.py:109} INFO - [2022-12-21 19:04:49,044] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 19:04:49,064] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.524 seconds
+[2022-12-21 19:05:19,204] {processor.py:163} INFO - Started process (PID=2427) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 19:05:19,206] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 19:05:19,207] {logging_mixin.py:109} INFO - [2022-12-21 19:05:19,207] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 19:05:19,778] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 19:05:19,785] {logging_mixin.py:109} INFO - [2022-12-21 19:05:19,785] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 19:05:19,804] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.604 seconds
+[2022-12-21 19:05:49,936] {processor.py:163} INFO - Started process (PID=2463) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 19:05:49,938] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 19:05:49,940] {logging_mixin.py:109} INFO - [2022-12-21 19:05:49,940] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 19:05:50,681] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 19:05:50,695] {logging_mixin.py:109} INFO - [2022-12-21 19:05:50,695] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 19:05:50,723] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.790 seconds
+[2022-12-21 19:06:20,862] {processor.py:163} INFO - Started process (PID=2491) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 19:06:20,864] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 19:06:20,865] {logging_mixin.py:109} INFO - [2022-12-21 19:06:20,865] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 19:06:21,435] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 19:06:21,445] {logging_mixin.py:109} INFO - [2022-12-21 19:06:21,445] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 19:06:21,471] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.611 seconds
+[2022-12-21 19:06:51,640] {processor.py:163} INFO - Started process (PID=2527) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 19:06:51,641] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 19:06:51,642] {logging_mixin.py:109} INFO - [2022-12-21 19:06:51,642] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 19:06:52,196] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 19:06:52,203] {logging_mixin.py:109} INFO - [2022-12-21 19:06:52,203] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 19:06:52,223] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.586 seconds
+[2022-12-21 19:07:22,349] {processor.py:163} INFO - Started process (PID=2554) to work on /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 19:07:22,351] {processor.py:642} INFO - Processing file /opt/airflow/dags/fireflow_batch_dag.py for tasks to queue
+[2022-12-21 19:07:22,352] {logging_mixin.py:109} INFO - [2022-12-21 19:07:22,352] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 19:07:23,104] {processor.py:654} INFO - DAG(s) dict_keys(['fireflow_dag']) retrieved from /opt/airflow/dags/fireflow_batch_dag.py
+[2022-12-21 19:07:23,113] {logging_mixin.py:109} INFO - [2022-12-21 19:07:23,113] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-12-21 19:07:23,138] {processor.py:171} INFO - Processing /opt/airflow/dags/fireflow_batch_dag.py took 0.791 seconds
