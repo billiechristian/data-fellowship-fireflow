@@ -1,9 +1,4 @@
-# Case 9 Data Fellowship 8 IYKRA
-
-## Problems
-
-Make an avro producer and avro consumer like the example in the code above has been shared but uses the bitcoin_price_Training dataset. 
-If possible load to Big Query, will be a plus for this task.
+# Streaming Transaction Data to Bigquery using Kafka
 
 ## How to run the program?
 
