@@ -1,0 +1,5 @@
+confluent-kafka
+google-cloud-bigquery
+avro-python3
+radar
+Faker

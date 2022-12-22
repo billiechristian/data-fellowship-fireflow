@@ -1,0 +1,23 @@
+{
+  "type": "record",
+  "namespace": "DataTraining",
+  "name": "TransactionData",
+  "fields": [
+    {
+      "name": "Date",
+      "type": "string"
+    },
+    {
+      "name": "User_ID",
+      "type": "int"
+    },
+    {
+      "name": "Transaction",
+      "type": "string"
+    },
+    {
+      "name": "Nominal",
+      "type": "int"
+    }
+  ]
+}
